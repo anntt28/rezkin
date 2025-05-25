@@ -11153,7 +11153,7 @@ a.btn-call-mobile {
 }
 @media (min-width: 768px) {
   .representative-brand {
-    background-image: url("../images/bg-brand.jpg");
+    background-image: url("../images/bg-brand.png");
     padding: 174px 0 87px;
   }
 }
@@ -11445,15 +11445,16 @@ a.btn-call-mobile {
 }
 
 .list-life-style {
-  display: grid;
+  display: none;
   margin-top: 24px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: auto;
   gap: 10px;
 }
 @media (min-width: 768px) {
   .list-life-style {
     gap: 20px;
+    display: grid;
   }
 }
 .list-life-style .img {

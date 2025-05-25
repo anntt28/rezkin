@@ -384,7 +384,7 @@
   background-size: cover;
   padding: 38px 0 20px;
   @include minWidth(768px) {
-    background-image: url("../images/bg-brand.jpg");
+    background-image: url("../images/bg-brand.png");
     padding: 174px 0 87px;
   }
   .box-heading-common {
@@ -646,13 +646,14 @@
   }
 }
 .list-life-style {
-  display: grid;
+  display: none;
   margin-top: 24px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: auto;
   gap: 10px;
   @include minWidth(768px) {
     gap: 20px;
+    display: grid;
   }
   .img {
     border-radius: 10px;
