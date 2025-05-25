@@ -1,7 +1,7 @@
 List page
 
-| Tên Trang               | Đường Dẫn             | Trạng Thái  |
+| Page               | Link             | Status  |
 |-------------------------|------------------------|-------------|
-| Homepage             | `/`                    | ✅ Đã hoàn thành |
+| Homepage             | `/`                    | ✅ Done |
 
 > Cập nhật lần cuối: 26/05/2025
