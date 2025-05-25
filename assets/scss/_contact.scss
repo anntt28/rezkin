@@ -85,6 +85,7 @@
     justify-content: space-between;
     flex-direction: column;
     gap: 30px;
+    font-family: "Roboto Flex", sans-serif;
     @include minWidth(1200px) {
       flex-direction: row;
       gap: 20px;
