@@ -59,26 +59,11 @@ a {
 p {
   font-size: 14px;
   line-height: 150%;
-  font-family: "Roboto Flex", sans-serif;
   @include minWidth(1200px) {
     font-size: 16px;
   }
 }
-.text-color-6E71B8{
-  color: #6E71B8;
-}
-.text-color-38C0C2{
-  color: #38C0C2;
-}
-.text-color-FD8964{
-  color: #FD8964;
-}
-.text-color-58A8E3{
-  color: #58A8E3;
-}
-.text-color-E55B5B{
-  color: #E55B5B;
-}
+
 .object-fit-cover {
   object-fit: cover;
 }
@@ -512,7 +497,7 @@ textarea {
     margin-bottom: 5px;
     color: $main-01;
     @include minWidth(768px) {
-      margin-bottom: 5px;
+      margin-bottom: 16px;
       font-size: 32px;
       line-height: 1.3;
     }
@@ -531,23 +516,6 @@ textarea {
     margin-top: 10px;
     line-height: 25px;
   }
-}
-.box-heading-common{
-  p{
-    color: $gray-01;
-    font-size: 17px;
-    max-width: 1046px;
-    margin: 0 auto;
-    line-height: 2;
-  }
-}
-.heading-type-common{
-  color: $color-2B2B2B;
-  @include minWidth(768px) {
-      margin-bottom: 5px;
-      font-size: 50px;
-      line-height: 1.111;
-    }
 }
 .image-cover-h {
   position: relative;
@@ -574,15 +542,15 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px dashed $color-EBC499;
   margin-bottom: 24px;
   @include minWidth(567px) {
     justify-content: space-between;
   }
   a {
+    color: $primary;
     display: none;
     align-items: center;
-    color:$color-FF6D3E;
-    font-family: "Roboto Flex", sans-serif;
     gap: 5px;
     &::after {
       content: "";
@@ -599,12 +567,45 @@ textarea {
   }
   h2 {
     text-transform: uppercase;
+    font-family: "Plus Jakarta Sans";
     font-size: 16px;
     line-height: 1.2;
     color: $main-01;
     position: relative;
     @include minWidth(567px) {
-      font-size: 50px;
+      font-size: 28px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      background: radial-gradient(
+        circle,
+        rgba(255, 109, 62, 1) 0%,
+        rgb(255 237 237) 100%
+      );
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      height: 2px;
+      @include minWidth(567px) {
+        background: $primary;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-radius: 100%;
+      position: absolute;
+      right: 50%;
+      transform: translateX(-50%);
+      bottom: -12px;
+      background-color: $primary;
+      @include minWidth(567px) {
+        right: -5px;
+      }
     }
   }
 }

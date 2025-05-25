@@ -3,19 +3,14 @@ $(function () {
     $(this).siblings(".video-slider").get(0).play();
     $(this).addClass("active");
   });
-  var swiper2 = new Swiper(".product-category-h .slider-tab-p", {
+  var swiper2 = new Swiper(".slider-certification ", {
     loop: true,
-    loopedSlides: 1,
     slidesPerView: 2,
     slidesPerGroup: 1,
     spaceBetween: 5,
-    freeMode: true,
-    watchSlidesProgress: true,
-    spaceBetween: 10,
-    slideToClickedSlide: true,
     navigation: {
-      nextEl: ".swiper-button-next-1",
-      prevEl: ".swiper-button-prev-1",
+      nextEl: ".swiper-button-next-certfi",
+      prevEl: ".swiper-button-prev-certfi",
     },
     breakpoints: {
       470: {
@@ -27,196 +22,68 @@ $(function () {
         spaceBetween: 8,
       },
       1200: {
-        slidesPerView: 7,
+        slidesPerView: 4,
+        spaceBetween: 16,
+      },
+    },
+  });
+  var swiper3 = new Swiper(".slider-brand", {
+    loop: true,
+    slidesPerView: 2,
+    slidesPerGroup: 1,
+    spaceBetween: 5,
+    navigation: {
+      nextEl: ".swiper-button-next-brand",
+      prevEl: ".swiper-button-prev-brand",
+    },
+    breakpoints: {
+      470: {
+        slidesPerView: 3,
         spaceBetween: 8,
       },
-    },
-  });
-  var swiper3 = new Swiper(".product-category-h .slider-product-p", {
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    spaceBetween: 24,
-    navigation: {
-      nextEl: ".swiper-button-next-2",
-      prevEl: ".swiper-button-prev-2",
-    },
-    pagination: {
-      el: ".swiper-pagination-2",
-      clickable: true,
-    },
-    thumbs: {
-      swiper: swiper2,
-    },
-  });
-  var swiper4 = new Swiper(".slider-review-customer", {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".swiper-button-next-4",
-      prevEl: ".swiper-button-prev-4",
-    },
-    pagination: {
-      el: ".swiper-pagination-1",
-      clickable: true,
-    },
-    breakpoints: {
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-    },
-  });
-  var swiper5 = new Swiper(".slider-blog-news", {
-    loop: true,
-    slidesPerView: 2,
-    spaceBetween: 10,
-    breakpoints: {
-      567: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 30,
-      },
-    },
-  });
-  var swiper5 = new Swiper(".slider-product-by-category", {
-    loop: false,
-    slidesPerView: 2,
-    spaceBetween: 5,
-    breakpoints: {
-      567: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      },
-      1200: {
-        slidesPerView: 5,
-        spaceBetween: 24,
-      },
-    },
-  });
-  var swiper5 = new Swiper(".slider-product-by-category-small", {
-    loop: false,
-    slidesPerView: 2,
-    spaceBetween: 14,
-    breakpoints: {
-      567: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      },
-      1200: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-      },
-    },
-    navigation: {
-      nextEl: ".swiper-button-next-small",
-      prevEl: ".swiper-button-prev-small",
-    },
-  });
-  var swiper6 = new Swiper(".product-haruco-slider", {
-    cssMode: false,
-    loopedSlides: 4,
-    slideToClickedSlide: true,
-    paginationClickable: true,
-    slidesPerView: 2,
-    slidesPerGroup: 1,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next-cate",
-      prevEl: ".swiper-button-prev-cate",
-    },
-    pagination: {
-      el: ".swiper-pagination-3",
-      clickable: true,
-    },
-    breakpoints: {
-      567: {
-        slidesPerView: 2,
-      },
       768: {
-        slidesPerView: 3,
-      },
-      1200: {
         slidesPerView: 5,
-        spaceBetween: 25,
-        allowTouchMove: false,
+        spaceBetween: 8,
       },
-    },
-  });
-  var swiper7 = new Swiper(".product-gallery-h .slider-thumb-child", {
-    loop: false,
-    slidesPerView: 3,
-    slidesPerGroup: 1,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next-6",
-      prevEl: ".swiper-button-prev-6",
-    },
-    breakpoints: {
       1200: {
         slidesPerView: 4,
         spaceBetween: 16,
       },
     },
   });
-  var swiper8 = new Swiper(".product-gallery-h .slider-images-main", {
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    spaceBetween: 24,
-    thumbs: {
-      swiper: swiper7,
-    },
-  });
-  var swiper9 = new Swiper(".slider-image-from-customer", {
+  var swiper4 = new Swiper(".slider-video-introduce", {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".swiper-button-next-9",
-      prevEl: ".swiper-button-prev-9",
-    },
+    slidesPerGroup: 1,
+    spaceBetween: 5,
     breakpoints: {
-      1024: {
-        slidesPerView: 5,
-        spaceBetween: 9,
-      },
-      576: {
-        slidesPerView: 3,
-        spaceBetween: 30,
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 16,
       },
     },
   });
   $(".list-item-bo span").on("click", function (e) {
-      $(this).siblings('span').removeClass('active');
-      $(this).addClass('active'); 
-    });
-    $('.qty-count').on('click', function () {
-      const input = $(this).siblings('.product-qty') // lấy input cùng nhóm
-      const currentVal = parseInt(input.val());
-      const min = parseInt(input.attr('min'));
-      const max = parseInt(input.attr('max'));
-    
-      if ($(this).data('action') === 'add') {
-        if (currentVal < max) {
-          input.val(currentVal + 1);
-        }
-      } else if ($(this).data('action') === 'minus') {
-        if (currentVal > min) {
-          input.val(currentVal - 1);
-        }
+    $(this).siblings("span").removeClass("active");
+    $(this).addClass("active");
+  });
+  $(".qty-count").on("click", function () {
+    const input = $(this).siblings(".product-qty"); // lấy input cùng nhóm
+    const currentVal = parseInt(input.val());
+    const min = parseInt(input.attr("min"));
+    const max = parseInt(input.attr("max"));
+
+    if ($(this).data("action") === "add") {
+      if (currentVal < max) {
+        input.val(currentVal + 1);
       }
-    });
-    
+    } else if ($(this).data("action") === "minus") {
+      if (currentVal > min) {
+        input.val(currentVal - 1);
+      }
+    }
+  });
+
   $('.content-page-cate-pr .woocommerce-ordering input[type="radio"]').each(
     function (index) {
       $(this).next("label").addBack().wrapAll("<div class='button-box'></div>");

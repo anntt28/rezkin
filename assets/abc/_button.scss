@@ -9,20 +9,19 @@
 }
 .btn-border-rounded {
   border-radius: 50px;
-  border: 1px solid $color-F05B30;
-  color: $color-F05B30;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box, 
+  linear-gradient(90deg, #e2313b 0%, #ff6d3e 100%) border-box;
+  color: $primary;
   padding: 3px 15px;
   display: inline-flex;
   align-items: center;
   transition: all 0.3s;
   svg {
-    margin-left: 10px;
-    path{
-      fill: $color-F05B30;
-    }
+    margin-left: 4px;
   }
   &:hover {
-    color: $color-F05B30;
+    color: $primary;
     opacity: 0.5;
   }
 }
