@@ -26,6 +26,22 @@
     }
   }
 }
+.banner-top {
+  .btn-linear-rounded {
+    font-size: 32px;
+    width: 209px;
+    height: 42px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 38px;
+    @include minWidth(1200px) {
+      bottom: 119px;
+    }
+  }
+}
 .introduce {
   .img-line {
     margin-top: 23px;
@@ -521,7 +537,7 @@
       display: flex;
       flex-direction: column-reverse;
     }
-    .line{
+    .line {
       margin-bottom: 27px;
     }
     p {
@@ -535,19 +551,19 @@
       color: $grey-7;
       margin-bottom: 8px;
     }
-    h3{
+    h3 {
       font-size: 64px;
       text-transform: uppercase;
       margin-bottom: 18px;
       line-height: 1;
     }
-    .icon{
+    .icon {
       margin-bottom: 18px;
-      img{
+      img {
         height: 72px;
       }
     }
-    img{
+    img {
       object-fit: contain;
     }
   }
