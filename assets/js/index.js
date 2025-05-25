@@ -22,12 +22,8 @@ $(function () {
         spaceBetween: 8,
       },
       768: {
-        slidesPerView: 5,
-        spaceBetween: 8,
-      },
-      1200: {
         slidesPerView: 4,
-        spaceBetween: 16,
+        spaceBetween: 8,
       },
     },
   });
@@ -47,11 +43,7 @@ $(function () {
     breakpoints: {
       470: {
         slidesPerView: 3,
-        spaceBetween: 8,
-      },
-      768: {
-        slidesPerView: 5,
-        spaceBetween: 8,
+        spaceBetween: 10,
       },
       1200: {
         slidesPerView: 4,
@@ -69,6 +61,66 @@ $(function () {
         slidesPerView: 2,
         spaceBetween: 16,
       },
+    },
+  });
+  var swiper2 = new Swiper(".product-category-h .slider-tab-p", {
+    loop: true,
+    loopedSlides: 1,
+    slidesPerView: 2,
+    slidesPerGroup: 1,
+    spaceBetween: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+    spaceBetween: 10,
+    slideToClickedSlide: true,
+    navigation: {
+      nextEl: ".swiper-button-next-1",
+      prevEl: ".swiper-button-prev-1",
+    },
+    breakpoints: {
+      470: {
+        slidesPerView: 3,
+        spaceBetween: 8,
+      },
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 8,
+      },
+      1200: {
+        slidesPerView: 7,
+        spaceBetween: 8,
+      },
+    },
+  });
+  var swiper4 = new Swiper(".slider-thumb-life-style", {
+    loop: true,
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+    spaceBetween: 5,
+    watchSlidesProgress: true,
+    spaceBetween: 10,
+    slideToClickedSlide: true,
+    navigation: {
+      nextEl: ".swiper-button-next-1",
+      prevEl: ".swiper-button-prev-1",
+    },
+    breakpoints: {
+      470: {
+        slidesPerView: 4,
+        spaceBetween: 8,
+      },
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 8,
+      },
+    },
+  });
+  var swiper5 = new Swiper(".slider-main-life-style", {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 24,
+    thumbs: {
+      swiper: swiper4,
     },
   });
   $(".list-item-bo span").on("click", function (e) {

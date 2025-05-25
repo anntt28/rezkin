@@ -107,7 +107,11 @@
 .content-introduce {
   display: grid;
   gap: 30px;
-  @include minWidth(1024px) {
+  @include minmaxWidth(1024px, 1199px) {
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  @include minWidth(1200px) {
     gap: 53px;
     grid-template-columns: 1fr 669px;
   }
@@ -295,7 +299,10 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
     margin-top: 10px;
-    @include minWidth(768px) {
+    @include minmaxWidth(768px, 1023px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    @include minWidth(1024px) {
       gap: 18px;
       grid-template-columns: repeat(6, minmax(0, 1fr));
       margin-top: 27px;
@@ -496,7 +503,12 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 52px;
   row-gap: 18px;
-  @include minWidth(768px) {
+  @include minmaxWidth(1024px, 1199px) {
+    gap: 40px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 20px;
+  }
+  @include minWidth(1200px) {
     margin-top: 30px;
     gap: 72px;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -545,7 +557,11 @@
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
-    @include minWidth(768px) {
+    @include minmaxWidth(1024px, 1199px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include minWidth(1200px) {
       display: grid;
       grid-template-columns: 596px 1fr;
       gap: 56px;
@@ -668,6 +684,24 @@
       object-fit: cover;
       width: 100%;
       height: 100%;
+    }
+  }
+}
+.box-slider-mobile-life-style {
+  .img {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  .slider-main-life-style {
+    margin-bottom: 10px;
+    .img {
+      padding-top: 73.5%;
+    }
+  }
+  .slider-thumb-life-style {
+    .img {
+      padding-top: 74%;
     }
   }
 }
