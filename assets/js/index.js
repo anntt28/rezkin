@@ -12,6 +12,10 @@ $(function () {
       nextEl: ".swiper-button-next-certfi",
       prevEl: ".swiper-button-prev-certfi",
     },
+    pagination: {
+      el: ".swiper-pagination-2",
+      clickable: true,
+    },
     breakpoints: {
       470: {
         slidesPerView: 3,
@@ -35,6 +39,10 @@ $(function () {
     navigation: {
       nextEl: ".swiper-button-next-brand",
       prevEl: ".swiper-button-prev-brand",
+    },
+    pagination: {
+      el: ".swiper-pagination-1",
+      clickable: true,
     },
     breakpoints: {
       470: {

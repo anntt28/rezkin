@@ -263,3 +263,38 @@
 .footer-bottom-mobile {
   background-color: #e65f33;
 }
+.footer-middle-mobile {
+  padding-top:21px;
+  .map {
+    iframe {
+      height: 234px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+  .title-ft {
+    h4 {
+      font-size: 25px;
+    }
+  }
+  .box-menu{
+    margin-bottom: 15px;
+  }
+  .info-company-ft {
+    border-bottom: 1px solid #4f52a6;
+    padding-bottom: 0;
+    margin-bottom: 18px;
+    .info{
+      border-top: 1px solid #4f52a6;
+    }
+    .list-info{
+      li{
+        line-height: 1.8;
+        font-size:15px;
+      }
+    }
+  }
+  .list-sns-ic{
+    margin-top: 0;
+  }
+}
