@@ -11037,7 +11037,7 @@ a.btn-call-mobile {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 23px 0 25px;
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 @media (min-width: 768px) {
   .strategic-partner {
@@ -11194,6 +11194,7 @@ a.btn-call-mobile {
   background-image: url("../images/bg-item-brand.jpg");
   background-repeat: no-repeat;
   margin-bottom: 0;
+  background-size: cover;
 }
 @media (min-width: 768px) {
   .representative-brand .item-brand .img {
