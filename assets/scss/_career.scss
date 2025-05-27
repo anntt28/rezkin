@@ -78,7 +78,7 @@
   border: 0;
   box-shadow: 0px 0px 7px 0px #3f52a03b;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 10px !important;
   &:not(:last-child) {
    margin-bottom: 19px;
   }
@@ -86,10 +86,135 @@
  .card-header {
   background-color: $light;
   border: 0;
-  font-size: 18ppx;
+  display: flex;
   button {
    text-align: left;
    background-color: $light;
+   position: relative;
+   &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 12px;
+    height: 2px;
+    background-color: #6e71b8;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+   }
+   &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 2px;
+    height: 12px;
+    background-color: #6e71b8;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+   }
+   span {
+    font-size: 18px;
+    line-height: 1.6;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-weight: 500;
+   }
+   &:not(.collapsed) {
+    span {
+     color: $primary;
+     font-weight: 600;
+    }
+    &::before {
+     opacity: 0;
+    }
+   }
   }
  }
+ .collapse {
+  padding-right: 21px;
+  padding-bottom: 21px;
+ }
+ .card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow-y: auto;
+  max-height: 151px;
+ }
+}
+.apply-now {
+ .content {
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  @include minWidth(768px) {
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .form-apply-now {
+   background-image: url("../images/bg_apply-now.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 60px 72px;
+   h2 {
+    @include minWidth(768px) {
+     font-size: 40px;
+     line-height: 1;
+     font-weight: 600;
+     text-transform: uppercase;
+     margin-bottom: 10px;
+    }
+   }
+   form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 40px;
+    .custom-field-group {
+     margin-bottom: 0;
+     border-radius: 5px;
+     input {
+      color: #636363;
+      border-radius: 5px;
+      padding: 12px 20px;
+      &::placeholder{
+        color: #636363;
+      }
+     }
+     .file-upload{
+        margin-top: 10px;
+     }
+    }
+    .btn-appy-now {
+        font-family: "Alumni Sans", sans-serif;
+        font-size: 30px;
+        line-height: 1.1;
+    }
+   }
+  }
+  .img {
+   background: linear-gradient(229.06deg, #f05b30 1.25%, #2e3294 77.51%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+  }
+ }
+}
+.custom-select-i {
+ width: 100%;
+ height: 100%;
+ border-radius: 5px;
+ padding: 0 20px;
+ color: #636363;
+ appearance: none;
+ background-color: $light;
+ -webkit-appearance: none;
+ background-image: url("../images/icon/ic_arrow-down-grey.svg");
+ background-repeat: no-repeat;
+ background-size: 15px 15px;
+ background-position: right;
+ background-origin: content-box;
 }
