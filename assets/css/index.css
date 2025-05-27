@@ -12860,3 +12860,56 @@ a.btn-call-mobile {
   background-size: cover;
   padding: 67px 0;
 }
+.recruitment-process .suggest {
+  text-align: center;
+  color: #FFD83E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+  font-size: 35px;
+  line-height: 1;
+  margin-top: 29px;
+}
+.recruitment-process .list-step-recruitment {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  text-align: center;
+  color: #fff;
+  gap: 10px;
+  margin-top: 35px;
+}
+.recruitment-process .list-step-recruitment .item-step-recruitment {
+  position: relative;
+}
+.recruitment-process .list-step-recruitment .item-step-recruitment:not(:last-child) h6::after {
+  content: "";
+  background-image: url(../images/recruitment/arrow-right-violet.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 14px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -36px;
+}
+.recruitment-process .list-step-recruitment .icon {
+  margin-bottom: 24px;
+}
+.recruitment-process .list-step-recruitment h6 {
+  position: relative;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.recruitment-process .list-step-recruitment .number {
+  font-size: 50px;
+  line-height: 0.7;
+  font-weight: 600;
+}
+
+.work-culture {
+  margin-bottom: 34px;
+}
