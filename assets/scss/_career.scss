@@ -1,0 +1,95 @@
+.banner-career-employee {
+ .content-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  .text {
+   max-width: 456px;
+  }
+  .list-icon-checked-red {
+   font-size: 28px;
+   font-weight: 500;
+  }
+  h1 {
+   color: $primary;
+   font-weight: 600;
+   text-transform: uppercase;
+   @include minWidth(768px) {
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 16px;
+   }
+  }
+ }
+}
+.list-icon-checked-red {
+ li {
+  &::before {
+   content: "";
+   background-image: url("../images/icon/ic_tick-1.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 18px;
+   height: 17px;
+   display: inline-block;
+   margin-right: 15px;
+  }
+ }
+}
+.question-and-answer {
+ margin-bottom: 74px;
+ .content {
+  display: grid;
+  @include minWidth(768px) {
+   gap: 25px;
+   grid-template-columns: 525px 1fr;
+  }
+  .faq {
+   background: linear-gradient(180deg, #ffffff 0%, #ffe9d7 100%);
+   text-align: center;
+   padding: 30px 26px 54px;
+   h2 {
+    color: $primary;
+    @include minWidth(768px) {
+     font-size: 48px;
+     line-height: 1.333;
+    }
+   }
+   .des {
+    @include minWidth(768px) {
+     font-size: 32px;
+     line-height: 1.25;
+    }
+    strong {
+     @include minWidth(768px) {
+      font-size: 40px;
+      line-height: 1.25;
+     }
+    }
+   }
+  }
+ }
+}
+.accordion-faq {
+ font-family: "Roboto Flex", sans-serif;
+ .card {
+  border: 0;
+  box-shadow: 0px 0px 7px 0px #3f52a03b;
+  overflow: hidden;
+  border-radius: 10px;
+  &:not(:last-child) {
+   margin-bottom: 19px;
+  }
+ }
+ .card-header {
+  background-color: $light;
+  border: 0;
+  font-size: 18ppx;
+  button {
+   text-align: left;
+   background-color: $light;
+  }
+ }
+}
