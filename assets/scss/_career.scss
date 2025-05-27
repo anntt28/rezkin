@@ -1,4 +1,9 @@
 .banner-career-employee {
+  .content {
+    img {
+      width: 100%;
+    }
+  }
   .content-text {
     position: absolute;
     top: 28%;
@@ -635,6 +640,7 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 12px;
+      background-position: center;
     }
   }
   .box-item-culture {

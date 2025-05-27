@@ -12424,6 +12424,9 @@ a.btn-call-mobile {
   letter-spacing: 0;
 }
 
+.banner-career-employee .content img {
+  width: 100%;
+}
 .banner-career-employee .content-text {
   position: absolute;
   top: 28%;
@@ -13145,6 +13148,7 @@ a.btn-call-mobile {
   align-items: center;
   justify-content: center;
   margin-bottom: 12px;
+  background-position: center;
 }
 @media (min-width: 1200px) {
   .work-culture .box-item-culture {
