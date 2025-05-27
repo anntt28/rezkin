@@ -391,6 +391,18 @@ textarea {
   margin-top: 3px;
 }
 
+.text-red {
+  color: #F05B30;
+}
+
+.bg-red {
+  background-color: #F05B30;
+}
+
+.bg-blue {
+  background-color: #8FB7F7;
+}
+
 @media (min-width: 768px) {
   .modal-dialog {
     max-width: 80%;
@@ -8789,6 +8801,24 @@ input[type=number], .modal textarea[type=number], .modal .select2-container--def
   box-shadow: none;
 }
 
+.btn-apply-job {
+  color: #fff;
+  border-radius: 50px;
+  font-size: 16px;
+  width: 134px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-apply-job:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
 .btn-linear-rounded {
   border-radius: 50px;
   background: linear-gradient(71deg, #e72b29 0%, #f26d42 100%);
@@ -12522,6 +12552,7 @@ a.btn-call-mobile {
 }
 
 .question-and-answer {
+  margin-top: 74px;
   margin-bottom: 74px;
 }
 .question-and-answer .content {
@@ -12709,4 +12740,123 @@ a.btn-call-mobile {
   background-size: 15px 15px;
   background-position: right;
   background-origin: content-box;
+}
+
+.why-you-need-work-in-here {
+  margin-top: 45px;
+  margin-bottom: 58px;
+}
+.why-you-need-work-in-here .content {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .why-you-need-work-in-here .content {
+    grid-template-columns: 671px 1fr;
+    gap: 42px;
+  }
+}
+.why-you-need-work-in-here .content .heading-type-common {
+  margin-bottom: 22px;
+}
+.why-you-need-work-in-here .content .text {
+  margin-top: 10px;
+}
+.why-you-need-work-in-here .content .list-icon-checked-red {
+  margin-top: 16px;
+}
+.why-you-need-work-in-here .content .list-icon-checked-red li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.why-you-need-work-in-here .content .list-icon-checked-red li:not(:last-child) {
+  margin-bottom: 30px;
+}
+.why-you-need-work-in-here .content .list-icon-checked-red h3 {
+  margin-bottom: 0;
+  font-size: 30px;
+  color: #2E3294;
+  line-height: 1.33;
+  font-weight: 600;
+}
+.why-you-need-work-in-here .content .list-icon-checked-red p {
+  flex-basis: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-top: 5px;
+}
+
+.job-vacancies {
+  margin-top: 64px;
+}
+.job-vacancies .box-table-job-vacancies {
+  margin-top: 20px;
+}
+
+.box-table-job-vacancies table {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+.box-table-job-vacancies table th {
+  background-color: #5a5eb9;
+  color: #fff;
+  text-align: center;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1;
+}
+.box-table-job-vacancies table th:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+.box-table-job-vacancies table th:first-child {
+  width: 20.06%;
+}
+.box-table-job-vacancies table th:nth-child(2) {
+  width: 9.49%;
+}
+.box-table-job-vacancies table th:nth-child(3) {
+  width: 7.87%;
+}
+.box-table-job-vacancies table th:nth-child(4) {
+  width: 21.53%;
+}
+.box-table-job-vacancies table th:nth-child(5) {
+  width: 15.35%;
+}
+.box-table-job-vacancies table th:nth-child(6) {
+  width: 11.88%;
+}
+.box-table-job-vacancies table tbody {
+  border-left: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+}
+.box-table-job-vacancies table tbody span {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.box-table-job-vacancies table tbody tr td {
+  padding: 15px 5px;
+  font-size: 18px;
+  font-family: "Roboto Flex", sans-serif;
+  text-align: center;
+  border-bottom: 1px solid #d0d0d0;
+}
+.box-table-job-vacancies table tbody tr td:not(:last-child) {
+  border-right: 1px solid #d0d0d0;
+}
+
+.recruitment-process {
+  background-image: url("../images/bg_step-hire.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 67px 0;
 }

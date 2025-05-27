@@ -39,6 +39,7 @@
  }
 }
 .question-and-answer {
+ margin-top: 74px;
  margin-bottom: 74px;
  .content {
   display: grid;
@@ -179,18 +180,18 @@
       color: #636363;
       border-radius: 5px;
       padding: 12px 20px;
-      &::placeholder{
-        color: #636363;
+      &::placeholder {
+       color: #636363;
       }
      }
-     .file-upload{
-        margin-top: 10px;
+     .file-upload {
+      margin-top: 10px;
      }
     }
     .btn-appy-now {
-        font-family: "Alumni Sans", sans-serif;
-        font-size: 30px;
-        line-height: 1.1;
+     font-family: "Alumni Sans", sans-serif;
+     font-size: 30px;
+     line-height: 1.1;
     }
    }
   }
@@ -217,4 +218,121 @@
  background-size: 15px 15px;
  background-position: right;
  background-origin: content-box;
+}
+.why-you-need-work-in-here {
+ margin-top: 45px;
+ margin-bottom: 58px;
+ .content {
+  display: grid;
+  @include minWidth(768px) {
+   grid-template-columns: 671px 1fr;
+   gap: 42px;
+  }
+  .heading-type-common {
+   margin-bottom: 22px;
+  }
+  .text {
+   margin-top: 10px;
+  }
+  .list-icon-checked-red {
+   margin-top: 16px;
+   li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &:not(:last-child) {
+     margin-bottom: 30px;
+    }
+   }
+   h3 {
+    margin-bottom: 0;
+    font-size: 30px;
+    color: $primary;
+    line-height: 1.33;
+    font-weight: 600;
+   }
+   p {
+    flex-basis: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 5px;
+   }
+  }
+ }
+}
+.job-vacancies {
+ margin-top: 64px;
+ .box-table-job-vacancies {
+  margin-top: 20px;
+ }
+}
+.box-table-job-vacancies {
+ table {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  th {
+   background-color: #5a5eb9;
+   color: #fff;
+   text-align: center;
+   padding: 10px 5px;
+   text-transform: uppercase;
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 1;
+   &:not(:last-child) {
+    border-right: 1px solid $light;
+   }
+   &:first-child {
+    width: 20.06%;
+   }
+   &:nth-child(2) {
+    width: 9.49%;
+   }
+   &:nth-child(3) {
+    width: 7.87%;
+   }
+   &:nth-child(4) {
+    width: 21.53%;
+   }
+   &:nth-child(5) {
+    width: 15.35%;
+   }
+   &:nth-child(6) {
+    width: 11.88%;
+   }
+  }
+  tbody {
+   border-left: 1px solid #d0d0d0;
+   border-right: 1px solid #d0d0d0;
+   span {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+   }
+   tr {
+    td {
+     padding: 15px 5px;
+     font-size: 18px;
+     font-family: "Roboto Flex", sans-serif;
+     text-align: center;
+     &:not(:last-child) {
+      border-right: 1px solid #d0d0d0;
+     }
+     border-bottom: 1px solid #d0d0d0;
+    }
+   }
+  }
+ }
+}
+.recruitment-process{
+    background-image: url("../images/bg_step-hire.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 67px 0;
 }

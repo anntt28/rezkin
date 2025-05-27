@@ -391,6 +391,15 @@ textarea {
   font-size: 12px;
   margin-top: 3px;
 }
+.text-red{
+  color: #F05B30;
+}
+.bg-red{
+  background-color: #F05B30;
+}
+.bg-blue{
+  background-color: #8FB7F7;
+}
 .modal-dialog {
   @include minWidth(768px) {
     max-width: 80%;

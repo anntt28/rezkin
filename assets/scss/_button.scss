@@ -3,6 +3,23 @@
   box-shadow: none;
  }
 }
+.btn-apply-job {
+ color: #fff;
+ border-radius: 50px;
+ font-size: 16px;
+ width: 134px;
+ height: 35px;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ gap: 6px;
+ cursor: pointer;
+ transition: all 0.3s;
+ &:hover{
+  color: $light;
+  opacity: 0.8;
+ }
+}
 .btn-linear-rounded {
  border-radius: 50px;
  background: linear-gradient(71deg, #e72b29 0%, #f26d42 100%);
