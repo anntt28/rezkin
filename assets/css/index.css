@@ -103,13 +103,11 @@ p {
 }
 
 .object-fit-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .object-fit-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .fwb {
@@ -306,7 +304,12 @@ textarea {
   background: #F1F9FF;
   border-color: #F1F9FF;
 }
-.modal input::-moz-placeholder, .modal .select2-container--default .select2-selection--single::-moz-placeholder, .modal textarea::-moz-placeholder {
+.modal input::-webkit-input-placeholder, .modal .select2-container--default .select2-selection--single::-webkit-input-placeholder, .modal textarea::-webkit-input-placeholder {
+  /* Edge */
+  color: #C6CBD0;
+}
+.modal input:-ms-input-placeholder, .modal .select2-container--default .select2-selection--single:-ms-input-placeholder, .modal textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: #C6CBD0;
 }
 .modal input::placeholder, .modal .select2-container--default .select2-selection--single::placeholder, .modal textarea::placeholder {
@@ -9141,10 +9144,6 @@ input[type=number], .modal textarea[type=number], .modal .select2-container--def
   text-decoration: underline !important;
 }
 
-input::-moz-placeholder, .modal textarea::-moz-placeholder, .modal .select2-container--default .select2-selection--single::-moz-placeholder {
-  color: #aebcd5;
-}
-
 input::placeholder, .modal textarea::placeholder, .modal .select2-container--default .select2-selection--single::placeholder {
   color: #aebcd5;
 }
@@ -9249,432 +9248,354 @@ input::placeholder, .modal textarea::placeholder, .modal .select2-container--def
 }
 
 .col-c0 {
-  -moz-column-count: 0;
-       column-count: 0;
+  column-count: 0;
 }
 
 .col-c1 {
-  -moz-column-count: 1;
-       column-count: 1;
+  column-count: 1;
 }
 
 .col-c2 {
-  -moz-column-count: 2;
-       column-count: 2;
+  column-count: 2;
 }
 
 .col-c3 {
-  -moz-column-count: 3;
-       column-count: 3;
+  column-count: 3;
 }
 
 .col-c4 {
-  -moz-column-count: 4;
-       column-count: 4;
+  column-count: 4;
 }
 
 .col-c5 {
-  -moz-column-count: 5;
-       column-count: 5;
+  column-count: 5;
 }
 
 .col-c6 {
-  -moz-column-count: 6;
-       column-count: 6;
+  column-count: 6;
 }
 
 .col-c7 {
-  -moz-column-count: 7;
-       column-count: 7;
+  column-count: 7;
 }
 
 .col-c8 {
-  -moz-column-count: 8;
-       column-count: 8;
+  column-count: 8;
 }
 
 .col-c9 {
-  -moz-column-count: 9;
-       column-count: 9;
+  column-count: 9;
 }
 
 .col-c10 {
-  -moz-column-count: 10;
-       column-count: 10;
+  column-count: 10;
 }
 
 .col-c11 {
-  -moz-column-count: 11;
-       column-count: 11;
+  column-count: 11;
 }
 
 .col-c12 {
-  -moz-column-count: 12;
-       column-count: 12;
+  column-count: 12;
 }
 
 @media (min-width: 768px) {
   .col-md-c0 {
-    -moz-column-count: 0;
-         column-count: 0;
+    column-count: 0;
   }
 }
 @media (min-width: 768px) {
   .col-md-c1 {
-    -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
   }
 }
 @media (min-width: 768px) {
   .col-md-c2 {
-    -moz-column-count: 2;
-         column-count: 2;
+    column-count: 2;
   }
 }
 @media (min-width: 768px) {
   .col-md-c3 {
-    -moz-column-count: 3;
-         column-count: 3;
+    column-count: 3;
   }
 }
 @media (min-width: 768px) {
   .col-md-c4 {
-    -moz-column-count: 4;
-         column-count: 4;
+    column-count: 4;
   }
 }
 @media (min-width: 768px) {
   .col-md-c5 {
-    -moz-column-count: 5;
-         column-count: 5;
+    column-count: 5;
   }
 }
 @media (min-width: 768px) {
   .col-md-c6 {
-    -moz-column-count: 6;
-         column-count: 6;
+    column-count: 6;
   }
 }
 @media (min-width: 768px) {
   .col-md-c7 {
-    -moz-column-count: 7;
-         column-count: 7;
+    column-count: 7;
   }
 }
 @media (min-width: 768px) {
   .col-md-c8 {
-    -moz-column-count: 8;
-         column-count: 8;
+    column-count: 8;
   }
 }
 @media (min-width: 768px) {
   .col-md-c9 {
-    -moz-column-count: 9;
-         column-count: 9;
+    column-count: 9;
   }
 }
 @media (min-width: 768px) {
   .col-md-c10 {
-    -moz-column-count: 10;
-         column-count: 10;
+    column-count: 10;
   }
 }
 @media (min-width: 768px) {
   .col-md-c11 {
-    -moz-column-count: 11;
-         column-count: 11;
+    column-count: 11;
   }
 }
 @media (min-width: 768px) {
   .col-md-c12 {
-    -moz-column-count: 12;
-         column-count: 12;
+    column-count: 12;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c0 {
-    -moz-column-count: 0;
-         column-count: 0;
+    column-count: 0;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c1 {
-    -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c2 {
-    -moz-column-count: 2;
-         column-count: 2;
+    column-count: 2;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c3 {
-    -moz-column-count: 3;
-         column-count: 3;
+    column-count: 3;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c4 {
-    -moz-column-count: 4;
-         column-count: 4;
+    column-count: 4;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c5 {
-    -moz-column-count: 5;
-         column-count: 5;
+    column-count: 5;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c6 {
-    -moz-column-count: 6;
-         column-count: 6;
+    column-count: 6;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c7 {
-    -moz-column-count: 7;
-         column-count: 7;
+    column-count: 7;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c8 {
-    -moz-column-count: 8;
-         column-count: 8;
+    column-count: 8;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c9 {
-    -moz-column-count: 9;
-         column-count: 9;
+    column-count: 9;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c10 {
-    -moz-column-count: 10;
-         column-count: 10;
+    column-count: 10;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c11 {
-    -moz-column-count: 11;
-         column-count: 11;
+    column-count: 11;
   }
 }
 @media (min-width: 992px) {
   .col-lg-c12 {
-    -moz-column-count: 12;
-         column-count: 12;
+    column-count: 12;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c0 {
-    -moz-column-count: 0;
-         column-count: 0;
+    column-count: 0;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c1 {
-    -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c2 {
-    -moz-column-count: 2;
-         column-count: 2;
+    column-count: 2;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c3 {
-    -moz-column-count: 3;
-         column-count: 3;
+    column-count: 3;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c4 {
-    -moz-column-count: 4;
-         column-count: 4;
+    column-count: 4;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c5 {
-    -moz-column-count: 5;
-         column-count: 5;
+    column-count: 5;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c6 {
-    -moz-column-count: 6;
-         column-count: 6;
+    column-count: 6;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c7 {
-    -moz-column-count: 7;
-         column-count: 7;
+    column-count: 7;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c8 {
-    -moz-column-count: 8;
-         column-count: 8;
+    column-count: 8;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c9 {
-    -moz-column-count: 9;
-         column-count: 9;
+    column-count: 9;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c10 {
-    -moz-column-count: 10;
-         column-count: 10;
+    column-count: 10;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c11 {
-    -moz-column-count: 11;
-         column-count: 11;
+    column-count: 11;
   }
 }
 @media (min-width: 1440px) {
   .col-xxl-c12 {
-    -moz-column-count: 12;
-         column-count: 12;
+    column-count: 12;
   }
 }
 .col-g0 {
-  -moz-column-gap: 0px;
-       column-gap: 0px;
+  column-gap: 0px;
 }
 
 .col-g1 {
-  -moz-column-gap: 4px;
-       column-gap: 4px;
+  column-gap: 4px;
 }
 
 .col-g2 {
-  -moz-column-gap: 8px;
-       column-gap: 8px;
+  column-gap: 8px;
 }
 
 .col-g3 {
-  -moz-column-gap: 12px;
-       column-gap: 12px;
+  column-gap: 12px;
 }
 
 .col-g4 {
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  column-gap: 16px;
 }
 
 .col-g5 {
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 
 .col-g6 {
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
 }
 
 .col-g7 {
-  -moz-column-gap: 28px;
-       column-gap: 28px;
+  column-gap: 28px;
 }
 
 .col-g8 {
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 
 .col-g9 {
-  -moz-column-gap: 36px;
-       column-gap: 36px;
+  column-gap: 36px;
 }
 
 .col-g10 {
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
 }
 
 .col-g11 {
-  -moz-column-gap: 44px;
-       column-gap: 44px;
+  column-gap: 44px;
 }
 
 .col-g12 {
-  -moz-column-gap: 48px;
-       column-gap: 48px;
+  column-gap: 48px;
 }
 
 .col-g13 {
-  -moz-column-gap: 52px;
-       column-gap: 52px;
+  column-gap: 52px;
 }
 
 .col-g14 {
-  -moz-column-gap: 56px;
-       column-gap: 56px;
+  column-gap: 56px;
 }
 
 .col-g15 {
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  column-gap: 60px;
 }
 
 .col-g16 {
-  -moz-column-gap: 64px;
-       column-gap: 64px;
+  column-gap: 64px;
 }
 
 .col-g17 {
-  -moz-column-gap: 68px;
-       column-gap: 68px;
+  column-gap: 68px;
 }
 
 .col-g18 {
-  -moz-column-gap: 72px;
-       column-gap: 72px;
+  column-gap: 72px;
 }
 
 .col-g19 {
-  -moz-column-gap: 76px;
-       column-gap: 76px;
+  column-gap: 76px;
 }
 
 .col-g20 {
-  -moz-column-gap: 80px;
-       column-gap: 80px;
+  column-gap: 80px;
 }
 
 .col-g21 {
-  -moz-column-gap: 84px;
-       column-gap: 84px;
+  column-gap: 84px;
 }
 
 .col-g22 {
-  -moz-column-gap: 88px;
-       column-gap: 88px;
+  column-gap: 88px;
 }
 
 .col-g23 {
-  -moz-column-gap: 92px;
-       column-gap: 92px;
+  column-gap: 92px;
 }
 
 .col-g24 {
-  -moz-column-gap: 96px;
-       column-gap: 96px;
+  column-gap: 96px;
 }
 
 .col-g25 {
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  column-gap: 100px;
 }
 
 .layout {
@@ -9690,8 +9611,7 @@ input::placeholder, .modal textarea::placeholder, .modal .select2-container--def
 .layout-image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .layout-2 {
@@ -9797,8 +9717,7 @@ input::placeholder, .modal textarea::placeholder, .modal .select2-container--def
 .items-grid .img-item {
   border-radius: 10px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 300px;
   flex-shrink: 0;
   margin-bottom: 15px;
@@ -10582,8 +10501,7 @@ a.btn-call-mobile {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper-pagination-bullet {
@@ -10897,8 +10815,7 @@ a.btn-call-mobile {
 .banner-top .img-mobile img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .banner-top .btn-linear-rounded {
@@ -11032,8 +10949,7 @@ a.btn-call-mobile {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   row-gap: 15px;
 }
 @media (min-width: 768px) {
@@ -11081,10 +10997,8 @@ a.btn-call-mobile {
 }
 .item-blog-new .box-text .logo-brand img {
   height: 20px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: left;
-     object-position: left;
+  object-fit: contain;
+  object-position: left;
 }
 .item-blog-new .box-text h3 {
   color: #403f46;
@@ -11163,8 +11077,7 @@ a.btn-call-mobile {
   border-radius: 20px 20px 0 0;
 }
 .item-blog-list .box-image img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -11233,8 +11146,7 @@ a.btn-call-mobile {
   }
 }
 .strategic-partner .list-items-logo .img img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 100%;
   height: 100%;
   max-height: 54px;
@@ -11278,8 +11190,7 @@ a.btn-call-mobile {
   max-height: 442px;
 }
 .certification-inspection .box-slider-certification .item-certification .img img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .certification-inspection .box-slider-certification .item-certification h6 {
   font-family: "Roboto Flex", sans-serif;
@@ -11363,8 +11274,7 @@ a.btn-call-mobile {
   }
 }
 .representative-brand .item-brand .img img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   max-width: 126px;
 }
 @media (min-width: 768px) {
@@ -11413,8 +11323,7 @@ a.btn-call-mobile {
   }
 }
 .representative-brand .item-brand .line-leaves {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 44px;
   margin: 0 auto;
 }
@@ -11438,8 +11347,7 @@ a.btn-call-mobile {
 .list-core-values {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  -moz-column-gap: 52px;
-       column-gap: 52px;
+  column-gap: 52px;
   row-gap: 18px;
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -11582,8 +11490,7 @@ a.btn-call-mobile {
 .play-video-slider img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .play-video-slider::before {
   content: "";
@@ -11648,8 +11555,7 @@ a.btn-call-mobile {
   }
 }
 .list-life-style .img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -11718,8 +11624,7 @@ a.btn-call-mobile {
   height: 72px;
 }
 .timeline .timeline-step img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .timeline_sp {
@@ -11732,8 +11637,7 @@ a.btn-call-mobile {
   gap: 12px;
 }
 .timeline_sp .timeline-step img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .timeline_sp .timeline-step:not(:last-child) {
   margin-bottom: 50px;
@@ -12126,8 +12030,7 @@ a.btn-call-mobile {
 }
 .quality-control-process .content .img {
   text-align: center;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .quality-control-process .content .text h2 {
   font-size: 22px;
@@ -12345,8 +12248,7 @@ a.btn-call-mobile {
   overflow: hidden;
   width: 201px;
   height: 201px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main-product-team .list-main-product-team .item-heading {
   background-image: url(../images/bg-item-main.png);
@@ -12409,6 +12311,7 @@ a.btn-call-mobile {
 .box-cate-pr {
   border-radius: 20px;
   background: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
 }
 
@@ -12711,9 +12614,6 @@ a.btn-call-mobile {
   border-radius: 5px;
   padding: 12px 20px;
 }
-.apply-now .content .form-apply-now form .custom-field-group input::-moz-placeholder, .apply-now .content .form-apply-now form .custom-field-group .modal textarea::-moz-placeholder, .modal .apply-now .content .form-apply-now form .custom-field-group textarea::-moz-placeholder, .apply-now .content .form-apply-now form .custom-field-group .modal .select2-container--default .select2-selection--single::-moz-placeholder, .modal .select2-container--default .apply-now .content .form-apply-now form .custom-field-group .select2-selection--single::-moz-placeholder {
-  color: #636363;
-}
 .apply-now .content .form-apply-now form .custom-field-group input::placeholder, .apply-now .content .form-apply-now form .custom-field-group .modal textarea::placeholder, .modal .apply-now .content .form-apply-now form .custom-field-group textarea::placeholder, .apply-now .content .form-apply-now form .custom-field-group .modal .select2-container--default .select2-selection--single::placeholder, .modal .select2-container--default .apply-now .content .form-apply-now form .custom-field-group .select2-selection--single::placeholder {
   color: #636363;
 }
@@ -12739,8 +12639,7 @@ a.btn-call-mobile {
   border-radius: 5px;
   padding: 0 20px;
   color: #636363;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   background-color: #fff;
   -webkit-appearance: none;
   background-image: url("../images/icon/ic_arrow-down-grey.svg");
@@ -12865,8 +12764,8 @@ a.btn-call-mobile {
 .recruitment-process {
   background-image: url("../images/bg_step-hire.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 67px 0;
+  background-size: 100% 100%;
+  padding: 67px 0 77px;
 }
 .recruitment-process .suggest {
   text-align: center;
@@ -12919,5 +12818,29 @@ a.btn-call-mobile {
 }
 
 .work-culture {
-  margin-bottom: 34px;
+  margin-bottom: 64px;
+}
+.work-culture .content-work-culture {
+  margin-top: 57px;
+}
+.work-culture .box-item-culture {
+  max-width: 712px;
+}
+.work-culture .box-item-culture li:not(:last-child) {
+  margin-bottom: 21px;
+}
+.work-culture .box-item-culture h3 {
+  color: #2E3294;
+  font-size: 35px;
+  line-height: 1;
+}
+.work-culture .box-item-culture p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+.work-culture .box-item-culture-1 {
+  margin-bottom: -231px;
+}
+.work-culture .box-item-culture-2 {
+  margin-top: -231px;
 }

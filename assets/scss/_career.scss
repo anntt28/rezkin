@@ -333,8 +333,8 @@
 .recruitment-process {
  background-image: url("../images/bg_step-hire.png");
  background-repeat: no-repeat;
- background-size: cover;
- padding: 67px 0;
+ background-size: 100% 100%;
+ padding: 67px 0 77px;
  .suggest{
     text-align: center;
     color: #FFD83E;
@@ -390,5 +390,32 @@
  }
 }
 .work-culture{
-    margin-bottom: 34px;
+    margin-bottom: 64px;
+    .content-work-culture{
+        margin-top: 57px;
+       
+    }
+    .box-item-culture{
+        max-width: 712px;
+        li{
+            &:not(:last-child){
+                margin-bottom: 21px;
+            }
+        }
+        h3{
+            color: $primary;
+            font-size: 35px;
+            line-height: 1;
+        }
+        p{
+            font-size: 17px;
+            line-height: 1.8;
+        }
+    }
+    .box-item-culture-1{
+        margin-bottom: -231px;
+    }
+    .box-item-culture-2{
+        margin-top: -231px;
+    }
 }
