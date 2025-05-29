@@ -64,20 +64,20 @@ p {
     font-size: 16px;
   }
 }
-.text-color-6E71B8{
-  color: #6E71B8;
+.text-color-6E71B8 {
+  color: #6e71b8;
 }
-.text-color-38C0C2{
-  color: #38C0C2;
+.text-color-38C0C2 {
+  color: #38c0c2;
 }
-.text-color-FD8964{
-  color: #FD8964;
+.text-color-FD8964 {
+  color: #fd8964;
 }
-.text-color-58A8E3{
-  color: #58A8E3;
+.text-color-58A8E3 {
+  color: #58a8e3;
 }
-.text-color-E55B5B{
-  color: #E55B5B;
+.text-color-E55B5B {
+  color: #e55b5b;
 }
 .object-fit-cover {
   object-fit: cover;
@@ -391,14 +391,14 @@ textarea {
   font-size: 12px;
   margin-top: 3px;
 }
-.text-red{
-  color: #F05B30;
+.text-red {
+  color: #f05b30;
 }
-.bg-red{
-  background-color: #F05B30;
+.bg-red {
+  background-color: #f05b30;
 }
-.bg-blue{
-  background-color: #8FB7F7;
+.bg-blue {
+  background-color: #8fb7f7;
 }
 .modal-dialog {
   @include minWidth(768px) {
@@ -541,8 +541,8 @@ textarea {
     line-height: 25px;
   }
 }
-.box-heading-common{
-  p{
+.box-heading-common {
+  p {
     color: $gray-01;
     font-size: 15px;
     max-width: 1046px;
@@ -554,15 +554,15 @@ textarea {
     }
   }
 }
-.heading-type-common{
+.heading-type-common {
   color: $color-2B2B2B;
   font-size: 30px;
   font-weight: 600;
   @include minWidth(768px) {
-      margin-bottom: 5px;
-      font-size: 50px;
-      line-height: 1.111;
-    }
+    margin-bottom: 5px;
+    font-size: 50px;
+    line-height: 1.111;
+  }
 }
 .image-cover-h {
   position: relative;
@@ -596,7 +596,7 @@ textarea {
   a {
     display: none;
     align-items: center;
-    color:$color-FF6D3E;
+    color: $color-FF6D3E;
     font-family: "Roboto Flex", sans-serif;
     gap: 5px;
     &::after {
@@ -707,4 +707,22 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 input[type="number"] {
   -moz-appearance: textfield;
+}
+.btn-rounded-50-icon {
+  border-radius: 50px;
+  padding: 5px 20px;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  .icon {
+    margin-right: 5px;
+    display: flex;
+  }
+}
+.bg-F05B30 {
+  background-color: #f05b30;
+}
+.bg-4B4FAF {
+  background-color: #4b4faf;
 }

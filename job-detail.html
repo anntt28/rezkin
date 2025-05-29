@@ -1,644 +1,1558 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <title>Mô tả công việc</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.0/swiper-bundle.css" integrity="sha512-65cVl5TvVRWXwvBKxruMhDBQezjSJ4YvMF+zqzzC4hYrBdf2C+DlCz/JSIkfP2oarKV34cnb9Aa89nYtlP9RDA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="./assets/css/index.css" />
- </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Mô tả công việc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.0/swiper-bundle.css"
+      integrity="sha512-65cVl5TvVRWXwvBKxruMhDBQezjSJ4YvMF+zqzzC4hYrBdf2C+DlCz/JSIkfP2oarKV34cnb9Aa89nYtlP9RDA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
 
- <body>
-  <header class="header-page py-6 transition">
-   <div class="header-top">
-    <div class="container-fluid">
-     <div class="d-flex justify-content-center justify-content-lg-between align-items-center">
-      <div class="text text-uppercase text-white d-block">Công ty TNHH Rezkin Việt Nam</div>
-      <div class="feature d-none d-lg-flex align-items-center">
-       <ul class="user-f d-flex align-items-center">
-        <li>
-         <a href="tel:+84862302102" class="phone text-white">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <path
-            d="M12.885 7.61513C12.5702 6.11514 11.8651 4.72464 10.8408 3.58387C9.8166 2.4431 8.50943 1.59241 7.05118 1.1176C7.05118 1.1176 6.59227 1.00981 6.76649 0.317865C6.77773 0.263746 6.80011 0.212552 6.83219 0.167529C6.86427 0.122505 6.90537 0.0846355 6.95288 0.056321C7.00038 0.0280065 7.05325 0.00986487 7.10814 0.00304681C7.16303 -0.00377125 7.21874 0.000882977 7.27173 0.0167142C8.9692 0.545858 10.4913 1.52502 11.6761 2.85C12.8609 4.17497 13.664 5.79617 14 7.54105C14 7.54105 13.6946 8.07964 13.4388 8.09668C13.1422 8.11668 12.885 7.61513 12.885 7.61513ZM11.7574 7.68922C11.7574 7.68922 11.6402 8.24003 11.2147 8.09668C11.0664 8.0239 10.9492 7.90016 10.8848 7.74811C10.6153 6.68338 10.0894 5.70063 9.35285 4.88548C8.61632 4.07032 7.69152 3.44748 6.65899 3.07119C6.55964 3.02781 6.47877 2.95079 6.43063 2.8537C6.38249 2.75661 6.37016 2.64566 6.39581 2.54038C6.4996 2.08551 6.83062 2.21923 6.83062 2.21923C8.0483 2.63925 9.13921 3.36156 10.001 4.31835C10.8628 5.27514 11.4671 6.43505 11.7574 7.68922ZM9.50176 7.83961C9.50539 7.89139 9.49408 7.94313 9.46918 7.9887C9.44428 8.03426 9.40683 8.07173 9.36127 8.09668C9.31547 8.11678 9.26599 8.12715 9.21596 8.12711C9.16593 8.12708 9.11646 8.11664 9.07069 8.09647C9.02492 8.0763 8.98384 8.04684 8.95008 8.00995C8.91632 7.97306 8.8906 7.92956 8.87457 7.88221C8.66299 7.25151 8.32181 6.67197 7.87291 6.18079C7.42402 5.6896 6.87733 5.29761 6.26792 5.02997C6.20853 5.00896 6.15527 4.97357 6.1129 4.92697C6.07053 4.88036 6.04037 4.82399 6.02513 4.7629C6.01898 4.71459 6.02441 4.66551 6.04096 4.6197C6.05751 4.57389 6.08472 4.53267 6.12034 4.49943C6.15595 4.46619 6.19897 4.44188 6.24583 4.4285C6.29269 4.41512 6.34206 4.41306 6.38988 4.42249C7.13002 4.7255 7.79333 5.18946 8.33161 5.78067C8.86989 6.37187 9.26962 7.07547 9.50176 7.84035V7.83961ZM7.57421 9.46945C7.66651 9.56465 8.82823 8.62638 8.93054 8.72047C9.88588 9.5351 10.9219 10.2502 12.0224 10.8548C12.0909 10.9253 12.1286 11.02 12.1272 11.1182C12.1259 11.2165 12.0855 11.3101 12.015 11.3786L9.62446 13.7022C9.27009 14.0464 7.94638 14.6342 5.20814 11.8187L2.11331 8.63638C-0.666813 5.77785 -0.0303507 4.48323 0.324022 4.13911L2.71641 1.81584C2.7869 1.74737 2.88172 1.70969 2.98002 1.71108C3.07831 1.71247 3.17203 1.75282 3.24056 1.82325C3.81385 2.94329 4.50141 4.00115 5.29229 4.97997C5.37754 5.07813 4.40042 6.20495 4.48679 6.29385L7.57421 9.46945ZM4.17838 4.98515C3.67361 4.41974 3.25358 3.78415 2.93141 3.09824C2.88876 3.03811 2.82493 2.99633 2.75274 2.98129C2.68055 2.96624 2.60533 2.97904 2.54219 3.01711L1.10653 4.411C0.629836 4.88736 0.344039 5.75303 2.81501 8.29374L5.56585 11.1223C7.99976 13.6252 8.93907 13.347 9.37314 12.9114L10.8084 11.5175C10.8482 11.4555 10.8631 11.3807 10.8502 11.3082C10.8372 11.2357 10.7972 11.1707 10.7384 11.1263C10.043 10.7696 9.40211 10.3158 8.8349 9.77838C8.68181 9.63873 7.47153 10.5307 7.3366 10.3918L3.55786 6.50758C3.4107 6.35571 4.32555 5.15814 4.17838 4.98515Z"
-            fill="white"
-           />
-          </svg>
-          <span> +84 862.302.102 </span>
-         </a>
-        </li>
-        <li>
-         <a href="mailto:rezkinvietnam@gmail.com" class="mail text-white">
-          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <path d="M19.5949 0.904883C19.5047 0.548242 19.2297 0.264648 18.8773 0.163672C18.7871 0.137891 18.6926 0.122851 18.5938 0.122851H1.40625C1.30742 0.122851 1.21289 0.137891 1.12266 0.163672C0.770313 0.264648 0.495313 0.548242 0.405078 0.904883C0.385742 0.986523 0.375 1.07031 0.375 1.15625V12.8437C0.375 13.4109 0.839063 13.875 1.40625 13.875H18.5938C19.1609 13.875 19.625 13.4109 19.625 12.8437V1.15625C19.625 1.07031 19.6143 0.986523 19.5949 0.904883ZM17.8848 1.15625L10.3652 8.67578C10.1654 8.87559 9.83672 8.87559 9.63691 8.67578L2.11523 1.15625H17.8848ZM18.5938 12.3281C18.5938 12.6117 18.3617 12.8437 18.0781 12.8437H1.92188C1.63828 12.8437 1.40625 12.6117 1.40625 12.3281V1.90605L9.27168 9.77148C9.67344 10.1732 10.3287 10.1732 10.7305 9.77148L18.5938 1.90605V12.3281Z" fill="#ffffff" />
-          </svg>
-          <span> rezkinvietnam@gmail.com </span>
-         </a>
-        </li>
-       </ul>
-       <ul class="user-re bg-white d-flex">
-        <li>
-         <a href=""
-          ><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <path d="M14.2038 4.60389L13.3382 5.45198L11.231 3.38555L12.095 2.53798C12.1355 2.49862 12.1835 2.46748 12.2363 2.44633C12.2891 2.42518 12.3457 2.41444 12.4027 2.41473C12.5201 2.41473 12.6294 2.45756 12.711 2.53798L14.2033 4.0002C14.2849 4.08038 14.3308 4.18897 14.3309 4.3022C14.331 4.41543 14.2853 4.52409 14.2038 4.60441M6.86405 11.6617L4.89285 9.73368L10.703 4.07436L12.6363 5.9695L6.86405 11.6617ZM4.37125 12.2398L4.47845 10.5306L6.08805 12.1067L4.37125 12.2398ZM14.8193 3.39651L13.3254 1.9369C12.8358 1.45437 11.9707 1.45437 11.4811 1.9369L10.2619 3.34011L3.76325 9.42975L3.33552 13.0796L3.54352 13.2545L7.17445 12.7704L13.3878 6.4019L14.8193 5.25667C15.327 4.75847 15.327 3.89628 14.8193 3.39651ZM13.5073 7.66777C13.2619 7.66777 13.0838 7.85995 13.0838 8.0986V13.794C13.0838 14.3616 12.6342 14.8462 12.0545 14.8462H2.90032C2.31952 14.8462 1.64752 14.3616 1.64752 13.794V4.82218C1.64752 4.25505 2.31952 3.64979 2.90085 3.64979H7.82938C8.07258 3.64979 8.26885 3.47328 8.26885 3.23462C8.26885 2.9944 8.07258 2.81946 7.82938 2.81946H2.90085C1.74245 2.81946 0.800049 3.68635 0.800049 4.8227V13.794C0.800049 14.9298 1.74245 15.675 2.90138 15.675H12.0534C13.2128 15.675 13.9297 14.9298 13.9297 13.794V8.0986C13.9297 7.85995 13.7499 7.66777 13.5062 7.66777" fill="#121F38" />
-          </svg>
+  <body>
+    <header class="header-page py-6 transition">
+      <div class="header-top">
+        <div class="container-fluid">
+          <div
+            class="d-flex justify-content-center justify-content-lg-between align-items-center"
+          >
+            <div class="text text-uppercase text-white d-block">
+              Công ty TNHH Rezkin Việt Nam
+            </div>
+            <div class="feature d-none d-lg-flex align-items-center">
+              <ul class="user-f d-flex align-items-center">
+                <li>
+                  <a href="tel:+84862302102" class="phone text-white">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.885 7.61513C12.5702 6.11514 11.8651 4.72464 10.8408 3.58387C9.8166 2.4431 8.50943 1.59241 7.05118 1.1176C7.05118 1.1176 6.59227 1.00981 6.76649 0.317865C6.77773 0.263746 6.80011 0.212552 6.83219 0.167529C6.86427 0.122505 6.90537 0.0846355 6.95288 0.056321C7.00038 0.0280065 7.05325 0.00986487 7.10814 0.00304681C7.16303 -0.00377125 7.21874 0.000882977 7.27173 0.0167142C8.9692 0.545858 10.4913 1.52502 11.6761 2.85C12.8609 4.17497 13.664 5.79617 14 7.54105C14 7.54105 13.6946 8.07964 13.4388 8.09668C13.1422 8.11668 12.885 7.61513 12.885 7.61513ZM11.7574 7.68922C11.7574 7.68922 11.6402 8.24003 11.2147 8.09668C11.0664 8.0239 10.9492 7.90016 10.8848 7.74811C10.6153 6.68338 10.0894 5.70063 9.35285 4.88548C8.61632 4.07032 7.69152 3.44748 6.65899 3.07119C6.55964 3.02781 6.47877 2.95079 6.43063 2.8537C6.38249 2.75661 6.37016 2.64566 6.39581 2.54038C6.4996 2.08551 6.83062 2.21923 6.83062 2.21923C8.0483 2.63925 9.13921 3.36156 10.001 4.31835C10.8628 5.27514 11.4671 6.43505 11.7574 7.68922ZM9.50176 7.83961C9.50539 7.89139 9.49408 7.94313 9.46918 7.9887C9.44428 8.03426 9.40683 8.07173 9.36127 8.09668C9.31547 8.11678 9.26599 8.12715 9.21596 8.12711C9.16593 8.12708 9.11646 8.11664 9.07069 8.09647C9.02492 8.0763 8.98384 8.04684 8.95008 8.00995C8.91632 7.97306 8.8906 7.92956 8.87457 7.88221C8.66299 7.25151 8.32181 6.67197 7.87291 6.18079C7.42402 5.6896 6.87733 5.29761 6.26792 5.02997C6.20853 5.00896 6.15527 4.97357 6.1129 4.92697C6.07053 4.88036 6.04037 4.82399 6.02513 4.7629C6.01898 4.71459 6.02441 4.66551 6.04096 4.6197C6.05751 4.57389 6.08472 4.53267 6.12034 4.49943C6.15595 4.46619 6.19897 4.44188 6.24583 4.4285C6.29269 4.41512 6.34206 4.41306 6.38988 4.42249C7.13002 4.7255 7.79333 5.18946 8.33161 5.78067C8.86989 6.37187 9.26962 7.07547 9.50176 7.84035V7.83961ZM7.57421 9.46945C7.66651 9.56465 8.82823 8.62638 8.93054 8.72047C9.88588 9.5351 10.9219 10.2502 12.0224 10.8548C12.0909 10.9253 12.1286 11.02 12.1272 11.1182C12.1259 11.2165 12.0855 11.3101 12.015 11.3786L9.62446 13.7022C9.27009 14.0464 7.94638 14.6342 5.20814 11.8187L2.11331 8.63638C-0.666813 5.77785 -0.0303507 4.48323 0.324022 4.13911L2.71641 1.81584C2.7869 1.74737 2.88172 1.70969 2.98002 1.71108C3.07831 1.71247 3.17203 1.75282 3.24056 1.82325C3.81385 2.94329 4.50141 4.00115 5.29229 4.97997C5.37754 5.07813 4.40042 6.20495 4.48679 6.29385L7.57421 9.46945ZM4.17838 4.98515C3.67361 4.41974 3.25358 3.78415 2.93141 3.09824C2.88876 3.03811 2.82493 2.99633 2.75274 2.98129C2.68055 2.96624 2.60533 2.97904 2.54219 3.01711L1.10653 4.411C0.629836 4.88736 0.344039 5.75303 2.81501 8.29374L5.56585 11.1223C7.99976 13.6252 8.93907 13.347 9.37314 12.9114L10.8084 11.5175C10.8482 11.4555 10.8631 11.3807 10.8502 11.3082C10.8372 11.2357 10.7972 11.1707 10.7384 11.1263C10.043 10.7696 9.40211 10.3158 8.8349 9.77838C8.68181 9.63873 7.47153 10.5307 7.3366 10.3918L3.55786 6.50758C3.4107 6.35571 4.32555 5.15814 4.17838 4.98515Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span> +84 862.302.102 </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:rezkinvietnam@gmail.com"
+                    class="mail text-white"
+                  >
+                    <svg
+                      width="20"
+                      height="14"
+                      viewBox="0 0 20 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.5949 0.904883C19.5047 0.548242 19.2297 0.264648 18.8773 0.163672C18.7871 0.137891 18.6926 0.122851 18.5938 0.122851H1.40625C1.30742 0.122851 1.21289 0.137891 1.12266 0.163672C0.770313 0.264648 0.495313 0.548242 0.405078 0.904883C0.385742 0.986523 0.375 1.07031 0.375 1.15625V12.8437C0.375 13.4109 0.839063 13.875 1.40625 13.875H18.5938C19.1609 13.875 19.625 13.4109 19.625 12.8437V1.15625C19.625 1.07031 19.6143 0.986523 19.5949 0.904883ZM17.8848 1.15625L10.3652 8.67578C10.1654 8.87559 9.83672 8.87559 9.63691 8.67578L2.11523 1.15625H17.8848ZM18.5938 12.3281C18.5938 12.6117 18.3617 12.8437 18.0781 12.8437H1.92188C1.63828 12.8437 1.40625 12.6117 1.40625 12.3281V1.90605L9.27168 9.77148C9.67344 10.1732 10.3287 10.1732 10.7305 9.77148L18.5938 1.90605V12.3281Z"
+                        fill="#ffffff"
+                      />
+                    </svg>
+                    <span> rezkinvietnam@gmail.com </span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="user-re bg-white d-flex">
+                <li>
+                  <a href=""
+                    ><svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.2038 4.60389L13.3382 5.45198L11.231 3.38555L12.095 2.53798C12.1355 2.49862 12.1835 2.46748 12.2363 2.44633C12.2891 2.42518 12.3457 2.41444 12.4027 2.41473C12.5201 2.41473 12.6294 2.45756 12.711 2.53798L14.2033 4.0002C14.2849 4.08038 14.3308 4.18897 14.3309 4.3022C14.331 4.41543 14.2853 4.52409 14.2038 4.60441M6.86405 11.6617L4.89285 9.73368L10.703 4.07436L12.6363 5.9695L6.86405 11.6617ZM4.37125 12.2398L4.47845 10.5306L6.08805 12.1067L4.37125 12.2398ZM14.8193 3.39651L13.3254 1.9369C12.8358 1.45437 11.9707 1.45437 11.4811 1.9369L10.2619 3.34011L3.76325 9.42975L3.33552 13.0796L3.54352 13.2545L7.17445 12.7704L13.3878 6.4019L14.8193 5.25667C15.327 4.75847 15.327 3.89628 14.8193 3.39651ZM13.5073 7.66777C13.2619 7.66777 13.0838 7.85995 13.0838 8.0986V13.794C13.0838 14.3616 12.6342 14.8462 12.0545 14.8462H2.90032C2.31952 14.8462 1.64752 14.3616 1.64752 13.794V4.82218C1.64752 4.25505 2.31952 3.64979 2.90085 3.64979H7.82938C8.07258 3.64979 8.26885 3.47328 8.26885 3.23462C8.26885 2.9944 8.07258 2.81946 7.82938 2.81946H2.90085C1.74245 2.81946 0.800049 3.68635 0.800049 4.8227V13.794C0.800049 14.9298 1.74245 15.675 2.90138 15.675H12.0534C13.2128 15.675 13.9297 14.9298 13.9297 13.794V8.0986C13.9297 7.85995 13.7499 7.66777 13.5062 7.66777"
+                        fill="#121F38"
+                      />
+                    </svg>
 
-          <span>Đăng kí</span></a
-         >
-        </li>
-        <li>
-         <a href=""
-          ><svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <path d="M9.7831 8.28794C9.30498 7.93857 8.78412 7.66309 8.23161 7.46494C9.3966 6.73443 10.1118 5.43604 10.1118 4.02484C10.1118 1.80582 8.3593 0 6.20866 0C4.05692 0 2.30609 1.8058 2.30609 4.02484C2.30609 4.78056 2.50988 5.5165 2.90026 6.1571C3.22732 6.69574 3.67378 7.14763 4.20019 7.4755C3.63935 7.67196 3.10961 7.9523 2.62429 8.30653C2.09454 8.69369 1.6292 9.16189 1.2394 9.69625C0.429227 10.8105 0 12.1349 0 13.5275C0 13.789 0.203789 14 0.455342 14C0.708555 14 0.914004 13.789 0.914004 13.5275C0.914004 12.0759 1.4632 10.7077 2.45936 9.6742C3.45334 8.6453 4.77103 8.07773 6.16704 8.07631C6.21258 8.0809 6.26033 8.07631 6.30587 8.06484L6.34362 8.05739C7.70075 8.08547 8.97737 8.65189 9.94966 9.65615C10.9459 10.6882 11.4939 12.057 11.4939 13.51C11.4939 13.7686 11.6988 13.9808 11.9509 13.9808C12.203 13.9808 12.4074 13.7686 12.4074 13.51C12.4074 12.116 11.9798 10.7916 11.168 9.67934C10.7798 9.14246 10.3128 8.67453 9.7831 8.28794ZM6.20868 7.10756C4.56114 7.10756 3.21957 5.72557 3.21957 4.02486C3.21957 2.32558 4.56115 0.94303 6.20868 0.94303C7.85513 0.94303 9.1967 2.32558 9.1967 4.02486C9.1967 5.72556 7.85513 7.10756 6.20868 7.10756Z" fill="#121F38" />
-          </svg>
-          <span>Đăng nhập</span></a
-         >
-        </li>
-       </ul>
+                    <span>Đăng kí</span></a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><svg
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.7831 8.28794C9.30498 7.93857 8.78412 7.66309 8.23161 7.46494C9.3966 6.73443 10.1118 5.43604 10.1118 4.02484C10.1118 1.80582 8.3593 0 6.20866 0C4.05692 0 2.30609 1.8058 2.30609 4.02484C2.30609 4.78056 2.50988 5.5165 2.90026 6.1571C3.22732 6.69574 3.67378 7.14763 4.20019 7.4755C3.63935 7.67196 3.10961 7.9523 2.62429 8.30653C2.09454 8.69369 1.6292 9.16189 1.2394 9.69625C0.429227 10.8105 0 12.1349 0 13.5275C0 13.789 0.203789 14 0.455342 14C0.708555 14 0.914004 13.789 0.914004 13.5275C0.914004 12.0759 1.4632 10.7077 2.45936 9.6742C3.45334 8.6453 4.77103 8.07773 6.16704 8.07631C6.21258 8.0809 6.26033 8.07631 6.30587 8.06484L6.34362 8.05739C7.70075 8.08547 8.97737 8.65189 9.94966 9.65615C10.9459 10.6882 11.4939 12.057 11.4939 13.51C11.4939 13.7686 11.6988 13.9808 11.9509 13.9808C12.203 13.9808 12.4074 13.7686 12.4074 13.51C12.4074 12.116 11.9798 10.7916 11.168 9.67934C10.7798 9.14246 10.3128 8.67453 9.7831 8.28794ZM6.20868 7.10756C4.56114 7.10756 3.21957 5.72557 3.21957 4.02486C3.21957 2.32558 4.56115 0.94303 6.20868 0.94303C7.85513 0.94303 9.1967 2.32558 9.1967 4.02486C9.1967 5.72556 7.85513 7.10756 6.20868 7.10756Z"
+                        fill="#121F38"
+                      />
+                    </svg>
+                    <span>Đăng nhập</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a class="btn-card-mobile d-md-none d-block">
+              <img src="/assets/images/ic-cart-mobile.svg" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
-      <a class="btn-card-mobile d-md-none d-block">
-       <img src="/assets/images/ic-cart-mobile.svg" alt="" />
-      </a>
-     </div>
-    </div>
-   </div>
-  </header>
-  <div class="header-middle d-xl-block d-none">
-   <div class="container-fluid">
-    <div class="content-h-middle d-flex justify-content-between align-items-center">
-     <div class="logo d-flex align-items-center">
-      <img src="./assets/images/logo-1.png" alt="logo" />
-     </div>
-     <div class="main-menu d-flex align-items-center">
-      <nav id="site-navigation" class="primary-navigation" aria-label="Primary menu">
-       <div class="primary-menu-container">
-        <ul id="primary-menu-list" class="menu-wrapper">
-         <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-          <a href="#">Trang chủ</a>
-         </li>
-         <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
-          <a href="#">Giới thiệu</a>
-         </li>
-         <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-          <a href="#">Sản phẩm</a>
-         </li>
-         <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
-          <a href="#">Tin tức & sự kiện</a>
-         </li>
-         <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
-          <a href="#">check hàng chính hãng</a>
-         </li>
-         <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11">
-          <a href="#">Liên hệ</a>
-         </li>
-        </ul>
-       </div>
-      </nav>
-     </div>
-    </div>
-   </div>
-  </div>
-  <!-- header mobile -->
-  <div class="header-bottom-mobile d-xl-none d-flex">
-   <div class="container-fluid">
-    <div class="content-header-bottom-mobile d-flex align-items-center justify-content-between">
-     <div id="btn-hamburger" class="icon-menu-mobile">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <rect x="0.5" y="0.5" width="27" height="27" rx="1.5" fill="white" stroke="#44489F" />
-       <rect x="6" y="7" width="16" height="3" rx="1" fill="#44489F" />
-       <rect x="6" y="13" width="16" height="3" rx="1" fill="#44489F" />
-       <rect x="6" y="19" width="16" height="3" rx="1" fill="#44489F" />
-      </svg>
-     </div>
-     <div class="logo-mobile">
-      <img src="/assets/images/logo-1.png" alt="logo mobile" />
-     </div>
-     <a href="tel:0839.697.689" class="btn-call-mobile">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <path d="M4.15143 2.34075H0.940308C-0.513784 8.08958 4.41397 12.7072 7.05961 14.2974C9.9678 16.0365 12.9164 15.7869 14.0271 15.4447V12.3046C14.0271 11.6766 13.5828 11.5196 13.3607 11.5196L10.2101 10.8553L8.45312 12.5461C6.27198 11.5799 4.43417 9.08395 3.78791 7.95673L5.60552 6.14513C5.40356 5.31984 4.97541 3.53641 4.87848 3.00501C4.78154 2.4736 4.35339 2.34075 4.15143 2.34075Z" fill="url(#paint0_linear_21_1124)"></path>
-       <path d="M10.9681 7.41009C10.5754 5.63316 9.35519 5.03027 8.79418 4.95095C8.17707 4.82402 8.11629 4.21056 8.16304 3.91969C8.38745 3.22161 9.05131 3.31151 9.35519 3.44373C11.3748 4.07834 12.207 6.08797 12.3706 7.01346C12.5389 7.64807 12.1135 8.01827 11.8797 8.12404C11.2626 8.25096 11.0148 7.70096 10.9681 7.41009Z" fill="url(#paint1_linear_21_1124)"></path>
-       <path d="M14.0411 7.17923C13.3946 3.46521 10.2942 2.29107 8.82485 2.16825C8.17832 2.1093 8.11465 1.55416 8.16363 1.28396C8.22241 0.753388 8.77587 0.669872 9.04525 0.694435C13.7472 1.34292 15.3635 5.28783 15.5839 7.17923C15.7015 7.82771 15.2411 8.08809 14.9962 8.13722C14.4084 8.19617 14.1635 7.76876 14.1146 7.54769L14.0411 7.17923Z" fill="url(#paint2_linear_21_1124)"></path>
-       <defs>
-        <linearGradient id="paint0_linear_21_1124" x1="0.677246" y1="9.0157" x2="14.0271" y2="9.0157" gradientUnits="userSpaceOnUse">
-         <stop stop-color="#E2313B"></stop>
-         <stop offset="1" stop-color="#F26D42"></stop>
-        </linearGradient>
-        <linearGradient id="paint1_linear_21_1124" x1="8.1507" y1="5.74743" x2="12.409" y2="5.74743" gradientUnits="userSpaceOnUse">
-         <stop stop-color="#E2313B"></stop>
-         <stop offset="1" stop-color="#F26D42"></stop>
-        </linearGradient>
-        <linearGradient id="paint2_linear_21_1124" x1="8.1507" y1="4.41669" x2="15.6028" y2="4.41669" gradientUnits="userSpaceOnUse">
-         <stop stop-color="#E2313B"></stop>
-         <stop offset="1" stop-color="#F26D42"></stop>
-        </linearGradient>
-       </defs>
-      </svg>
-     </a>
-    </div>
-   </div>
-  </div>
-  <aside class="menu-aside-page">
-   <div class="backdrop"></div>
-   <div class="menu-aside px-5">
-    <div class="primary-menu-container">
-     <ul id="primary-menu-list" class="menu-wrapper">
-      <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-       <a href="#">Trang chủ</a>
-      </li>
-      <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
-       <a href="#">Giới thiệu</a>
-      </li>
-      <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-       <a href="#">Sản phẩm</a>
-      </li>
-      <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
-       <a href="#">Tin tức & sự kiện</a>
-      </li>
-      <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
-       <a href="#">Check hàng chính hãng</a>
-      </li>
-      <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11">
-       <a href="#">Liên hệ</a>
-      </li>
-     </ul>
-    </div>
-    <div class="menu-aside-close">
-     <span></span>
-     <span></span>
-    </div>
-   </div>
-  </aside>
-  <main class="job-detail-page">
-   <section class="banner-page-child">
-    <div class="content position-relative">
-     <div class="img d-md-block d-none">
-      <img src="./assets/images/bg-banner-brand-product.jpg" alt="banner" class="w-100 object-fit-contain" />
-     </div>
-     <div class="img d-md-none mb-0">
-      <img src="./assets/images/bg-banner-brand-product_sp.jpg" alt="banner" class="w-100 object-fit-contain" />
-     </div>
-     <div class="content-text">
+    </header>
+    <div class="header-middle d-xl-block d-none">
       <div class="container-fluid">
-       <div class="text">
-        <h1>Thương hiệu & sản phẩm</h1>
-       </div>
+        <div
+          class="content-h-middle d-flex justify-content-between align-items-center"
+        >
+          <div class="logo d-flex align-items-center">
+            <img src="./assets/images/logo-1.png" alt="logo" />
+          </div>
+          <div class="main-menu d-flex align-items-center">
+            <nav
+              id="site-navigation"
+              class="primary-navigation"
+              aria-label="Primary menu"
+            >
+              <div class="primary-menu-container">
+                <ul id="primary-menu-list" class="menu-wrapper">
+                  <li
+                    id="menu-item-6"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"
+                  >
+                    <a href="#">Trang chủ</a>
+                  </li>
+                  <li
+                    id="menu-item-7"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"
+                  >
+                    <a href="#">Giới thiệu</a>
+                  </li>
+                  <li
+                    id="menu-item-8"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"
+                  >
+                    <a href="#">Sản phẩm</a>
+                  </li>
+                  <li
+                    id="menu-item-9"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"
+                  >
+                    <a href="#">Tin tức & sự kiện</a>
+                  </li>
+                  <li
+                    id="menu-item-10"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"
+                  >
+                    <a href="#">check hàng chính hãng</a>
+                  </li>
+                  <li
+                    id="menu-item-11"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"
+                  >
+                    <a href="#">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
       </div>
-     </div>
     </div>
-   </section>
-   <section class="job-detail">
-    <div class="container-fluid">
-     <div class="breadcrumbs">
-      <ul>
-       <li>
-        <a href="">Trang chủ</a>
-        <span>/</span>
-        <span>Thương hiệu & sản phẩm</span>
-       </li>
-      </ul>
-     </div>
-     <div class="job-detail-box">
-      <div class="top-job-detail">
-       <div class="left">
-        <div class="img">
-         <img src="./assets/images/img-hiring.png" alt="img" />
+    <!-- header mobile -->
+    <div class="header-bottom-mobile d-xl-none d-flex">
+      <div class="container-fluid">
+        <div
+          class="content-header-bottom-mobile d-flex align-items-center justify-content-between"
+        >
+          <div id="btn-hamburger" class="icon-menu-mobile">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="27"
+                height="27"
+                rx="1.5"
+                fill="white"
+                stroke="#44489F"
+              />
+              <rect x="6" y="7" width="16" height="3" rx="1" fill="#44489F" />
+              <rect x="6" y="13" width="16" height="3" rx="1" fill="#44489F" />
+              <rect x="6" y="19" width="16" height="3" rx="1" fill="#44489F" />
+            </svg>
+          </div>
+          <div class="logo-mobile">
+            <img src="/assets/images/logo-1.png" alt="logo mobile" />
+          </div>
+          <a href="tel:0839.697.689" class="btn-call-mobile">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.15143 2.34075H0.940308C-0.513784 8.08958 4.41397 12.7072 7.05961 14.2974C9.9678 16.0365 12.9164 15.7869 14.0271 15.4447V12.3046C14.0271 11.6766 13.5828 11.5196 13.3607 11.5196L10.2101 10.8553L8.45312 12.5461C6.27198 11.5799 4.43417 9.08395 3.78791 7.95673L5.60552 6.14513C5.40356 5.31984 4.97541 3.53641 4.87848 3.00501C4.78154 2.4736 4.35339 2.34075 4.15143 2.34075Z"
+                fill="url(#paint0_linear_21_1124)"
+              ></path>
+              <path
+                d="M10.9681 7.41009C10.5754 5.63316 9.35519 5.03027 8.79418 4.95095C8.17707 4.82402 8.11629 4.21056 8.16304 3.91969C8.38745 3.22161 9.05131 3.31151 9.35519 3.44373C11.3748 4.07834 12.207 6.08797 12.3706 7.01346C12.5389 7.64807 12.1135 8.01827 11.8797 8.12404C11.2626 8.25096 11.0148 7.70096 10.9681 7.41009Z"
+                fill="url(#paint1_linear_21_1124)"
+              ></path>
+              <path
+                d="M14.0411 7.17923C13.3946 3.46521 10.2942 2.29107 8.82485 2.16825C8.17832 2.1093 8.11465 1.55416 8.16363 1.28396C8.22241 0.753388 8.77587 0.669872 9.04525 0.694435C13.7472 1.34292 15.3635 5.28783 15.5839 7.17923C15.7015 7.82771 15.2411 8.08809 14.9962 8.13722C14.4084 8.19617 14.1635 7.76876 14.1146 7.54769L14.0411 7.17923Z"
+                fill="url(#paint2_linear_21_1124)"
+              ></path>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_21_1124"
+                  x1="0.677246"
+                  y1="9.0157"
+                  x2="14.0271"
+                  y2="9.0157"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#E2313B"></stop>
+                  <stop offset="1" stop-color="#F26D42"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_21_1124"
+                  x1="8.1507"
+                  y1="5.74743"
+                  x2="12.409"
+                  y2="5.74743"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#E2313B"></stop>
+                  <stop offset="1" stop-color="#F26D42"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint2_linear_21_1124"
+                  x1="8.1507"
+                  y1="4.41669"
+                  x2="15.6028"
+                  y2="4.41669"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#E2313B"></stop>
+                  <stop offset="1" stop-color="#F26D42"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
         </div>
-        <div class="text">
-         <h1>Tuyển Nhân viên kinh doanh</h1>
-         <p><strong>Ngành nghề:</strong> Nhân viên kinh doanh</p>
-         <p><strong>Mức lương:</strong> <span class="text-red">Từ 12.000.000đ đến 30.000.000đ</span></p>
-         <p><strong>Lượt xem:</strong> 867 | <strong>Cập nhật:</strong> 06/05/2025 (2 ngày trước)</p>
-        </div>
-       </div>
-       <div class="right">
-        <a href="" class="btn-rounded-50-icon bg-F05B30">
-         <span class="icon">
-          <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <path d="M10.3283 10.4285C10.3283 10.7208 10.4473 11.0011 10.6592 11.2078C10.871 11.4145 11.1583 11.5306 11.4579 11.5306C11.7575 11.5306 12.0448 11.4145 12.2566 11.2078C12.4685 11.0011 12.5875 10.7208 12.5875 10.4285C12.5875 10.1363 12.4685 9.85595 12.2566 9.64928C12.0448 9.4426 11.7575 9.3265 11.4579 9.3265C11.1583 9.3265 10.871 9.4426 10.6592 9.64928C10.4473 9.85595 10.3283 10.1363 10.3283 10.4285ZM15.0349 10.4285C15.0349 10.7208 15.1539 11.0011 15.3657 11.2078C15.5776 11.4145 15.8649 11.5306 16.1645 11.5306C16.4641 11.5306 16.7514 11.4145 16.9632 11.2078C17.175 11.0011 17.294 10.7208 17.294 10.4285C17.294 10.1363 17.175 9.85595 16.9632 9.64928C16.7514 9.4426 16.4641 9.3265 16.1645 9.3265C15.8649 9.3265 15.5776 9.4426 15.3657 9.64928C15.1539 9.85595 15.0349 10.1363 15.0349 10.4285ZM5.62175 10.4285C5.62175 10.7208 5.74075 11.0011 5.95259 11.2078C6.16443 11.4145 6.45174 11.5306 6.75132 11.5306C7.05091 11.5306 7.33822 11.4145 7.55006 11.2078C7.76189 11.0011 7.8809 10.7208 7.8809 10.4285C7.8809 10.1363 7.76189 9.85595 7.55006 9.64928C7.33822 9.4426 7.05091 9.3265 6.75132 9.3265C6.45174 9.3265 6.16443 9.4426 5.95259 9.64928C5.74075 9.85595 5.62175 10.1363 5.62175 10.4285Z" fill="white" />
-           <path d="M21.1817 6.44282C20.6498 5.20991 19.8874 4.10328 18.9155 3.15277C17.9436 2.20456 16.8093 1.45838 15.5432 0.941802C14.2489 0.411445 12.8746 0.142822 11.4579 0.142822H11.4108C9.98474 0.14971 8.60336 0.42522 7.30435 0.967057C6.05004 1.49053 4.92517 2.2344 3.96268 3.18262C3.00018 4.13083 2.24478 5.23287 1.72235 6.46119C1.18109 7.73313 0.908113 9.08542 0.915173 10.4768C0.922232 12.0701 1.31288 13.652 2.04475 15.0663V18.5561C2.04475 19.1392 2.52953 19.6122 3.12726 19.6122H6.70661C8.15624 20.3262 9.77765 20.7074 11.4108 20.7143H11.4602C12.8699 20.7143 14.2371 20.4479 15.5244 19.9268C16.7834 19.4148 17.9153 18.6801 18.8849 17.741C19.8568 16.802 20.6216 15.7046 21.1558 14.4808C21.7112 13.2135 21.9936 11.8658 22.0006 10.4745C22.0077 9.07624 21.73 7.71935 21.1817 6.44282ZM17.6259 16.4989C15.9762 18.0923 13.7877 18.9694 11.4579 18.9694H11.4179C9.99886 18.9625 8.58924 18.6181 7.34435 17.9706L7.14668 17.8673H3.83325V14.6347L3.72735 14.4418C3.06372 13.2273 2.71073 11.852 2.70367 10.4676C2.69426 8.17854 3.59086 6.02956 5.23581 4.41093C6.8784 2.79231 9.07402 1.8969 11.4202 1.88772H11.4602C12.6369 1.88772 13.7782 2.11042 14.8537 2.55124C15.9033 2.98058 16.8446 3.59818 17.6541 4.38798C18.4613 5.17548 19.0967 6.09614 19.5367 7.12012C19.9933 8.18083 20.2215 9.30583 20.2168 10.4676C20.2027 12.7543 19.2826 14.8964 17.6259 16.4989Z" fill="white" />
-          </svg>
-         </span>
-         Chát & Gọi
-        </a>
-        <a href="" class="btn-rounded-50-icon bg-4B4FAF">
-         <span class="icon">
-          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <g clip-path="url(#clip0_80_3643)">
-            <mask id="mask0_80_3643" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="17">
-             <path d="M0.314453 0.428589H16.7145V16.4286H0.314453V0.428589Z" fill="white" />
-            </mask>
-            <g mask="url(#mask0_80_3643)">
-             <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7879 0.462778L1.0174 6.0022C0.87966 6.05414 0.761605 6.14609 0.679214 6.26565C0.596823 6.3852 0.554076 6.52656 0.55676 6.67059C0.559445 6.81463 0.60743 6.95439 0.694221 7.07094C0.781012 7.18748 0.902417 7.2752 1.042 7.32221L4.322 8.44335C4.46612 8.49262 4.61962 8.51017 4.77151 8.49475C4.92341 8.47935 5.06992 8.43135 5.20057 8.3542L12.3674 4.1382C12.4156 4.11418 12.471 4.10723 12.524 4.11854C12.5769 4.12985 12.6241 4.15873 12.6578 4.20025C12.6914 4.24176 12.7091 4.29335 12.708 4.34623C12.707 4.3991 12.6872 4.44999 12.652 4.4902L7.27517 9.8182C7.17991 9.90027 7.10344 10.001 7.05076 10.1138C6.99808 10.2267 6.97036 10.3491 6.96942 10.4731L6.94365 15.9714C6.95041 16.0787 6.99334 16.1808 7.06576 16.262C7.13818 16.3431 7.23604 16.3986 7.34412 16.4198C7.45219 16.4411 7.56444 16.4269 7.6634 16.3795C7.76236 16.332 7.84249 16.2541 7.89134 16.1576L9.86637 12.2491C9.98305 12.067 10.168 11.9366 10.3819 11.8859C10.5957 11.835 10.8214 11.8678 11.0109 11.9771L14.5146 13.8628C14.6267 13.9228 14.7525 13.9543 14.8804 13.9543C15.0084 13.9543 15.1342 13.9229 15.2464 13.8628C15.3585 13.8028 15.4533 13.716 15.5219 13.6108C15.5906 13.5055 15.631 13.3851 15.6392 13.2605L16.4685 0.906207C16.4689 0.827131 16.4491 0.749214 16.411 0.679409C16.3729 0.609605 16.3177 0.550088 16.2503 0.506172C16.1829 0.462257 16.1054 0.43531 16.0247 0.427738C15.9441 0.420166 15.8627 0.432204 15.7879 0.462778Z" fill="white" />
-            </g>
-           </g>
-           <defs>
-            <clipPath id="clip0_80_3643">
-             <rect width="16.4" height="16" fill="white" transform="translate(0.314453 0.428589)" />
-            </clipPath>
-           </defs>
-          </svg>
-         </span>
-         Ứng tuyển
-        </a>
-       </div>
       </div>
-     </div>
     </div>
-   </section>
-   <section class="apply-now">
-    <div class="container-fluid">
-     <div class="content">
-      <div class="form-apply-now">
-       <h2 class="text-white text-center">ứng tuyển nhanh</h2>
-       <p class="des text-white text-center">Bạn thấy mình phù hợp với vị trí tuyển dụng nào của chúng tôi, hãy ứng tuyển ngay để có công việc tốt nhất</p>
-       <form action="">
-        <div class="custom-field-group custom-field-one-half">
-         <input type="text" placeholder="Họ và tên" class="border-0" />
+    <aside class="menu-aside-page">
+      <div class="backdrop"></div>
+      <div class="menu-aside px-5">
+        <div class="primary-menu-container">
+          <ul id="primary-menu-list" class="menu-wrapper">
+            <li
+              id="menu-item-6"
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"
+            >
+              <a href="#">Trang chủ</a>
+            </li>
+            <li
+              id="menu-item-7"
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"
+            >
+              <a href="#">Giới thiệu</a>
+            </li>
+            <li
+              id="menu-item-8"
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"
+            >
+              <a href="#">Sản phẩm</a>
+            </li>
+            <li
+              id="menu-item-9"
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"
+            >
+              <a href="#">Tin tức & sự kiện</a>
+            </li>
+            <li
+              id="menu-item-10"
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"
+            >
+              <a href="#">Check hàng chính hãng</a>
+            </li>
+            <li
+              id="menu-item-11"
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"
+            >
+              <a href="#">Liên hệ</a>
+            </li>
+          </ul>
         </div>
-        <div class="custom-field-group custom-field-one-half">
-         <input type="text" placeholder="Số điện thoại" class="border-0" />
+        <div class="menu-aside-close">
+          <span></span>
+          <span></span>
         </div>
-        <div class="custom-field-group custom-field-one-half">
-         <input type="text" placeholder="Email của bạn" class="border-0" />
-        </div>
-        <div class="custom-field-group custom-field-one-half">
-         <select class="custom-select-i">
-          <option value="">Vị trí ứng tuyển</option>
-          <option value="">Nhân viên gầm cầu</option>
-          <option value="">Nhân viên đầu cầu</option>
-          <option value="">Nhân viên cuối cầu</option>
-         </select>
-        </div>
-        <div class="custom-field-group">
-         <div class="file-upload">
-          <div class="icon">
-           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18.3431 0H5.65688C2.53267 0 0 2.53267 0 5.65688V18.3431C0 21.4673 2.53267 24 5.65688 24H18.3431C21.4673 24 24 21.4673 24 18.3431V5.65688C24 2.53267 21.4673 0 18.3431 0Z" fill="url(#paint0_linear_67_60)" />
-            <path d="M20.055 11.804C19.7423 11.804 19.4423 11.9282 19.2211 12.1494C19 12.3705 18.8757 12.6705 18.8757 12.9833V15.7953C18.8748 16.569 18.5671 17.3108 18.02 17.8579C17.4729 18.405 16.7311 18.7127 15.9574 18.7136H8.04257C7.26886 18.7127 6.5271 18.405 5.98001 17.8579C5.43291 17.3108 5.12517 16.569 5.12428 15.7953V12.9833C5.12428 12.6705 5.00003 12.3705 4.77887 12.1494C4.5577 11.9282 4.25773 11.804 3.94495 11.804C3.63218 11.804 3.33221 11.9282 3.11104 12.1494C2.88988 12.3705 2.76563 12.6705 2.76562 12.9833V15.7953C2.76769 17.1942 3.32431 18.5352 4.31348 19.5244C5.30265 20.5136 6.64367 21.0702 8.04257 21.0723H15.9574C17.3563 21.0702 18.6973 20.5136 19.6865 19.5244C20.6757 18.5352 21.2323 17.1942 21.2344 15.7953V12.9833C21.2344 12.6705 21.1101 12.3705 20.889 12.1494C20.6678 11.9282 20.3678 11.804 20.055 11.804Z" fill="white" />
-            <path
-             d="M9.19036 8.08947C9.34535 8.08972 9.49886 8.05932 9.64206 8.00004C9.78527 7.94075 9.91534 7.85374 10.0248 7.74402L10.8147 6.95353V14.0251C10.8147 14.3377 10.9389 14.6375 11.16 14.8586C11.381 15.0796 11.6809 15.2038 11.9935 15.2038C12.1483 15.2038 12.3017 15.1733 12.4447 15.1141C12.5878 15.0548 12.7177 14.9679 12.8272 14.8584C12.9367 14.7489 13.0235 14.6189 13.0827 14.4758C13.1419 14.3327 13.1723 14.1793 13.1723 14.0245V6.95298L13.9739 7.75403C14.1952 7.97533 14.4953 8.09966 14.8083 8.09966C15.1213 8.09966 15.4214 7.97533 15.6427 7.75403C15.8641 7.53272 15.9884 7.23257 15.9884 6.9196C15.9884 6.60663 15.8641 6.30647 15.6427 6.08517L12.8263 3.27202C12.8073 3.25311 12.7873 3.23531 12.7678 3.21639L12.7539 3.20471C12.7125 3.16988 12.6688 3.13774 12.6232 3.10847L12.6165 3.10458C12.5692 3.07485 12.5197 3.04864 12.4686 3.02614C12.4172 3.00415 12.3644 2.98557 12.3106 2.97051H12.305C12.253 2.95611 12.2 2.94551 12.1465 2.9388H12.132C12.1075 2.9388 12.0831 2.93324 12.0586 2.93213H12.0536C12.0285 2.93213 12.003 2.93213 11.9779 2.93213H11.959C11.934 2.93213 11.9089 2.93213 11.8845 2.93658C11.8583 2.93658 11.8327 2.9427 11.8066 2.94715H11.7916C11.7375 2.9567 11.6842 2.96989 11.6319 2.98665H11.6269C11.5714 3.0051 11.5173 3.0276 11.465 3.05396C11.4394 3.06731 11.4138 3.08121 11.3883 3.09679C11.3654 3.1107 11.3432 3.12516 11.3209 3.14074L11.312 3.14686C11.2905 3.16243 11.2694 3.17856 11.2486 3.19525C11.2459 3.19814 11.2429 3.20075 11.2397 3.20304C11.2234 3.21713 11.2073 3.2316 11.1913 3.24643C11.1857 3.25134 11.1803 3.25654 11.1752 3.26201L11.1635 3.27258L8.36094 6.07682C8.19618 6.24182 8.08403 6.45195 8.03866 6.68067C7.99328 6.90938 8.01673 7.14641 8.10603 7.36181C8.19533 7.5772 8.34648 7.76129 8.54037 7.8908C8.73426 8.02032 8.9622 8.08946 9.19537 8.08947H9.19036Z"
-             fill="white"
+      </div>
+    </aside>
+    <main class="job-detail-page">
+      <section class="banner-page-child">
+        <div class="content position-relative">
+          <div class="img d-md-block d-none">
+            <img
+              src="./assets/images/job-detail/banner-job-detail.jpg"
+              alt="banner"
+              class="w-100 object-fit-contain"
             />
-            <defs>
-             <linearGradient id="paint0_linear_67_60" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#00AFFF" />
-              <stop offset="1" stop-color="#0063FF" />
-             </linearGradient>
-            </defs>
-           </svg>
           </div>
-          <input type="file" id="chooseFile" />
-          <label for="chooseFile" class="text-white">Upload CV (file) </label>
-          <span id="noFile" class="text-white"></span>
-         </div>
-        </div>
-        <div class="d-flex justify-content-center w-100">
-         <button type="submit" class="btn-linear-rounded-orange border-0 text-white btn-appy-now text-uppercase">
-          Gửi ngay
-          <span class="icon ml-1">
-           <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.73526 3.71601L5.21785 5.27042C5.41002 5.47443 5.51499 5.7458 5.50985 6.02534C5.50472 6.30487 5.38989 6.5699 5.19042 6.76261C4.99095 6.95532 4.72302 7.06009 4.44506 7.05407C4.1671 7.04804 3.90166 6.93171 3.70663 6.73044L0.684168 3.56384C0.545331 3.4188 0.449818 3.23756 0.408711 3.04113C0.367605 2.8447 0.38259 2.64114 0.451928 2.45406C0.521265 2.26699 0.642114 2.10407 0.800451 1.98421C0.958788 1.86434 1.14812 1.79246 1.34649 1.77688L18.7092 0.407194C18.909 0.391285 19.1097 0.433132 19.2877 0.527811C19.4657 0.622491 19.6137 0.766067 19.7142 0.941656C19.8147 1.11724 19.8636 1.31755 19.8551 1.519C19.8466 1.72046 19.781 1.9147 19.6662 2.07888L9.69282 16.3573C9.57735 16.5228 9.41669 16.6508 9.22999 16.7263C9.04328 16.8017 8.8384 16.8214 8.63976 16.7828C8.44112 16.7443 8.2571 16.6492 8.10963 16.509C7.96215 16.3687 7.85744 16.1892 7.80798 15.9917L5.93569 8.49412C5.87959 8.27018 5.8974 8.03469 5.98644 7.82335C6.07547 7.612 6.23087 7.43632 6.42907 7.32293L10.0739 5.23652C10.3155 5.09818 10.6029 5.06265 10.8728 5.13775C11.1427 5.21285 11.3729 5.39242 11.5129 5.63697C11.6529 5.88151 11.6911 6.17099 11.6192 6.44173C11.5473 6.71247 11.3712 6.94228 11.1295 7.08062L8.17175 8.77375L9.28682 13.2367L16.6475 2.69773L3.73526 3.71601Z" fill="white" />
-           </svg>
-          </span>
-         </button>
-        </div>
-       </form>
-      </div>
-      <div class="img mb-0 d-md-flex d-none">
-       <img src="./assets/images/img_apply-now.png" alt="img" />
-      </div>
-     </div>
-    </div>
-   </section>
-   <section class="question-and-answer">
-    <div class="container-fluid">
-     <div class="content">
-      <div class="heading-question">
-       <div class="img d-md-block d-none">
-        <img src="./assets/images/explain-box.png" alt="Giải đáp thắc mắc" />
-       </div>
-       <div class="img mb-0 d-md-none">
-        <img src="./assets/images/explain-box_sp.png" alt="Giải đáp thắc mắc" />
-       </div>
-       <div class="faq">
-        <h2>Những câu hỏi thường gặp</h2>
-        <div class="des">Chúng tôi luôn sẵn sàng giải đáp mọi thắc mắc của bạn về công việc bạn quan tâm <strong class="d-block">rezkin.vn</strong></div>
-       </div>
-      </div>
-      <div class="list-faq">
-       <div class="accordion accordion-faq" id="accordionFAQ">
-        <div class="card">
-         <div class="card-header" id="headingOne">
-          <button class="border-0 w-100" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-           <span>Thời gian làm việc như thế nào? Có cần kinh nghiệm không?</span>
-          </button>
-         </div>
-         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
-          <div class="card-body">Hoa hồng theo doanh số, thưởng doanh thu, thưởng tháng, thưởng vượt chỉ tiêu, thưởng hàng năm theo kết quả sản xuất kinh doanh… Thu nhập xứng đáng theo năng lực không giới hạn. Bảo hiểm, ngày phép, chế độ thưởng các ngày lễ, thưởng theo hiệu quả kinh doanh, lương tháng 13,…</div>
-         </div>
-        </div>
-        <div class="card">
-         <div class="card-header" id="headingTwo">
-          <button class="border-0 w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-           <span>Thời gian làm việc như thế nào? Có cần kinh nghiệm không?</span>
-          </button>
-         </div>
-         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
-          <div class="card-body">Some placeholder content for the second accordion panel. This panel is hidden by default.</div>
-         </div>
-        </div>
-        <div class="card">
-         <div class="card-header" id="headingThree">
-          <button class="border-0 w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-           <span>Thời gian làm việc như thế nào? Có cần kinh nghiệm không?</span>
-          </button>
-         </div>
-         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
-          <div class="card-body">
-           <p>Hoa hồng theo doanh số, thưởng doanh thu, thưởng tháng, thưởng vượt chỉ tiêu, thưởng hàng năm theo kết quả sản xuất kinh doanh… Thu nhập xứng đáng theo năng lực không giới hạn.</p>
-           <p>Bảo hiểm, ngày phép, chế độ thưởng các ngày lễ, thưởng theo hiệu quả kinh doanh, lương tháng 13,…</p>
-           <p>Bảo hiểm, ngày phép, chế độ thưởng các ngày lễ, thưởng theo hiệu quả kinh doanh, lương tháng 13,…</p>
-           <p>Bảo hiểm, ngày phép, chế độ thưởng các ngày lễ, thưởng theo hiệu quả kinh doanh, lương tháng 13,…</p>
+          <div class="img d-md-none mb-0">
+            <img
+              src="./assets/images/job-detail/banner-job-detail_sp.jpg"
+              alt="banner"
+              class="w-100 object-fit-contain"
+            />
           </div>
-         </div>
         </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section>
-  </main>
-  <footer class="footer-page">
-   <section class="footer-m d-none d-lg-block">
-    <div class="container-fluid">
-     <div class="footer-middle">
-      <div class="row">
-       <div class="col-xl-5">
-        <div class="info-company-ft">
-         <div class="logo">
-          <a href="">
-           <img src="./assets/images/logo-white.svg" alt="image" />
-          </a>
-         </div>
-         <p class="des-intro text-white">Rezkin cam kết đồng hành cùng khách hàng bằng chất lượng và tinh thần trách nhiệm. Chúng tôi thấu hiểu rằng sự uy tín không chỉ là thương hiệu – đó là niềm tin được xây dựng từ mỗi trải nghiệm của khách hàng.</p>
-         <div class="info">
-          <h5>Công ty TNHH Rezkin Việt Nam</h5>
-          <ul class="list-info">
-           <li>
-            <div class="icon">
-             <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="5.23055" cy="4.61608" r="2.07702" fill="white" />
-              <path d="M5.23055 1.07697V0C2.09195 0.0615412 0.845741 2.48729 0.614961 3.69247C0.245713 5.29255 0.871382 6.64132 1.23037 7.11571L5.23055 12.4236V10.5389C4.48693 9.55171 2.85352 7.37726 2.26888 6.57722C1.68424 5.77718 1.61501 5.06433 1.65347 4.80791C1.71501 1.8847 4.06384 1.10261 5.23055 1.07697Z" fill="white" />
-              <path d="M5.23055 1.08031V0C8.39645 0.0617318 9.6535 2.49499 9.88629 3.70391C10.2587 5.30893 9.62764 6.66189 9.26552 7.13774L5.23055 12.4621V10.5716C5.98064 9.58128 7.62826 7.4001 8.21798 6.59758C8.80771 5.79507 8.87754 5.08001 8.83875 4.82279C8.77667 1.89054 6.40742 1.10603 5.23055 1.08031Z" fill="white" />
-              <circle cx="5.23055" cy="4.6155" r="0.923119" fill="white" />
-             </svg>
+      </section>
+      <section class="job-detail">
+        <div class="container-fluid">
+          <div class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="">Trang chủ</a>
+                <span>/</span>
+                <span>Thương hiệu & sản phẩm</span>
+              </li>
+            </ul>
+          </div>
+          <div class="job-detail-box d-xl-flex d-none w-100">
+            <div class="top-job-detail w-100">
+              <div class="left">
+                <div class="img">
+                  <img src="./assets/images/img-hiring.png" alt="img" />
+                </div>
+                <div class="text">
+                  <h1>Tuyển Nhân viên kinh doanh</h1>
+                  <p><strong>Ngành nghề:</strong> Nhân viên kinh doanh</p>
+                  <p>
+                    <strong>Mức lương:</strong>
+                    <span class="text-red">Từ 12.000.000đ đến 30.000.000đ</span>
+                  </p>
+                  <p>
+                    <strong>Lượt xem:</strong> 867 |
+                    <strong>Cập nhật:</strong> 06/05/2025 (2 ngày trước)
+                  </p>
+                </div>
+              </div>
+              <div class="right">
+                <a href="" class="btn-rounded-50-icon text-white bg-F05B30">
+                  <span class="icon">
+                    <svg
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.3283 10.4285C10.3283 10.7208 10.4473 11.0011 10.6592 11.2078C10.871 11.4145 11.1583 11.5306 11.4579 11.5306C11.7575 11.5306 12.0448 11.4145 12.2566 11.2078C12.4685 11.0011 12.5875 10.7208 12.5875 10.4285C12.5875 10.1363 12.4685 9.85595 12.2566 9.64928C12.0448 9.4426 11.7575 9.3265 11.4579 9.3265C11.1583 9.3265 10.871 9.4426 10.6592 9.64928C10.4473 9.85595 10.3283 10.1363 10.3283 10.4285ZM15.0349 10.4285C15.0349 10.7208 15.1539 11.0011 15.3657 11.2078C15.5776 11.4145 15.8649 11.5306 16.1645 11.5306C16.4641 11.5306 16.7514 11.4145 16.9632 11.2078C17.175 11.0011 17.294 10.7208 17.294 10.4285C17.294 10.1363 17.175 9.85595 16.9632 9.64928C16.7514 9.4426 16.4641 9.3265 16.1645 9.3265C15.8649 9.3265 15.5776 9.4426 15.3657 9.64928C15.1539 9.85595 15.0349 10.1363 15.0349 10.4285ZM5.62175 10.4285C5.62175 10.7208 5.74075 11.0011 5.95259 11.2078C6.16443 11.4145 6.45174 11.5306 6.75132 11.5306C7.05091 11.5306 7.33822 11.4145 7.55006 11.2078C7.76189 11.0011 7.8809 10.7208 7.8809 10.4285C7.8809 10.1363 7.76189 9.85595 7.55006 9.64928C7.33822 9.4426 7.05091 9.3265 6.75132 9.3265C6.45174 9.3265 6.16443 9.4426 5.95259 9.64928C5.74075 9.85595 5.62175 10.1363 5.62175 10.4285Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M21.1817 6.44282C20.6498 5.20991 19.8874 4.10328 18.9155 3.15277C17.9436 2.20456 16.8093 1.45838 15.5432 0.941802C14.2489 0.411445 12.8746 0.142822 11.4579 0.142822H11.4108C9.98474 0.14971 8.60336 0.42522 7.30435 0.967057C6.05004 1.49053 4.92517 2.2344 3.96268 3.18262C3.00018 4.13083 2.24478 5.23287 1.72235 6.46119C1.18109 7.73313 0.908113 9.08542 0.915173 10.4768C0.922232 12.0701 1.31288 13.652 2.04475 15.0663V18.5561C2.04475 19.1392 2.52953 19.6122 3.12726 19.6122H6.70661C8.15624 20.3262 9.77765 20.7074 11.4108 20.7143H11.4602C12.8699 20.7143 14.2371 20.4479 15.5244 19.9268C16.7834 19.4148 17.9153 18.6801 18.8849 17.741C19.8568 16.802 20.6216 15.7046 21.1558 14.4808C21.7112 13.2135 21.9936 11.8658 22.0006 10.4745C22.0077 9.07624 21.73 7.71935 21.1817 6.44282ZM17.6259 16.4989C15.9762 18.0923 13.7877 18.9694 11.4579 18.9694H11.4179C9.99886 18.9625 8.58924 18.6181 7.34435 17.9706L7.14668 17.8673H3.83325V14.6347L3.72735 14.4418C3.06372 13.2273 2.71073 11.852 2.70367 10.4676C2.69426 8.17854 3.59086 6.02956 5.23581 4.41093C6.8784 2.79231 9.07402 1.8969 11.4202 1.88772H11.4602C12.6369 1.88772 13.7782 2.11042 14.8537 2.55124C15.9033 2.98058 16.8446 3.59818 17.6541 4.38798C18.4613 5.17548 19.0967 6.09614 19.5367 7.12012C19.9933 8.18083 20.2215 9.30583 20.2168 10.4676C20.2027 12.7543 19.2826 14.8964 17.6259 16.4989Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  Chat & Gọi
+                </a>
+                <a href="" class="btn-rounded-50-icon text-white bg-4B4FAF">
+                  <span class="icon">
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_80_3643)">
+                        <mask
+                          id="mask0_80_3643"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="17"
+                          height="17"
+                        >
+                          <path
+                            d="M0.314453 0.428589H16.7145V16.4286H0.314453V0.428589Z"
+                            fill="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask0_80_3643)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.7879 0.462778L1.0174 6.0022C0.87966 6.05414 0.761605 6.14609 0.679214 6.26565C0.596823 6.3852 0.554076 6.52656 0.55676 6.67059C0.559445 6.81463 0.60743 6.95439 0.694221 7.07094C0.781012 7.18748 0.902417 7.2752 1.042 7.32221L4.322 8.44335C4.46612 8.49262 4.61962 8.51017 4.77151 8.49475C4.92341 8.47935 5.06992 8.43135 5.20057 8.3542L12.3674 4.1382C12.4156 4.11418 12.471 4.10723 12.524 4.11854C12.5769 4.12985 12.6241 4.15873 12.6578 4.20025C12.6914 4.24176 12.7091 4.29335 12.708 4.34623C12.707 4.3991 12.6872 4.44999 12.652 4.4902L7.27517 9.8182C7.17991 9.90027 7.10344 10.001 7.05076 10.1138C6.99808 10.2267 6.97036 10.3491 6.96942 10.4731L6.94365 15.9714C6.95041 16.0787 6.99334 16.1808 7.06576 16.262C7.13818 16.3431 7.23604 16.3986 7.34412 16.4198C7.45219 16.4411 7.56444 16.4269 7.6634 16.3795C7.76236 16.332 7.84249 16.2541 7.89134 16.1576L9.86637 12.2491C9.98305 12.067 10.168 11.9366 10.3819 11.8859C10.5957 11.835 10.8214 11.8678 11.0109 11.9771L14.5146 13.8628C14.6267 13.9228 14.7525 13.9543 14.8804 13.9543C15.0084 13.9543 15.1342 13.9229 15.2464 13.8628C15.3585 13.8028 15.4533 13.716 15.5219 13.6108C15.5906 13.5055 15.631 13.3851 15.6392 13.2605L16.4685 0.906207C16.4689 0.827131 16.4491 0.749214 16.411 0.679409C16.3729 0.609605 16.3177 0.550088 16.2503 0.506172C16.1829 0.462257 16.1054 0.43531 16.0247 0.427738C15.9441 0.420166 15.8627 0.432204 15.7879 0.462778Z"
+                            fill="white"
+                          />
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_80_3643">
+                          <rect
+                            width="16.4"
+                            height="16"
+                            fill="white"
+                            transform="translate(0.314453 0.428589)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  Ứng tuyển
+                </a>
+              </div>
             </div>
-            <span>Địa chỉ: Đại Áng, Thanh Trì, Hà Nội</span>
-           </li>
-           <li>
-            <div class="icon">
-             <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.86265 0.34082H0.216757C-0.981381 5.07772 3.07898 8.8825 5.25892 10.1928C7.6552 11.6258 10.0848 11.4201 11 11.1382V8.55078C11 8.03331 10.6339 7.90394 10.4509 7.90394L7.85489 7.35661L6.40714 8.74981C4.60993 7.9537 3.09562 5.89706 2.56311 4.96825L4.06078 3.47553C3.89438 2.79552 3.54159 1.32602 3.46171 0.888151C3.38184 0.450287 3.02905 0.34082 2.86265 0.34082Z" fill="white" />
-             </svg>
+          </div>
+          <div class="job-detail-box job-detail-box_sp d-xl-none">
+            <div class="top-job-detail">
+              <div class="left">
+                <div class="img">
+                  <img src="./assets/images/img-hiring.png" alt="img" />
+                </div>
+                <div class="text">
+                  <h1>Tuyển Nhân viên kinh doanh</h1>
+                  <div class="btn-feature">
+                    <a href="" class="btn-rounded-50-icon text-white bg-F05B30">
+                      <span class="icon">
+                        <svg
+                          width="22"
+                          height="21"
+                          viewBox="0 0 22 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.3283 10.4285C10.3283 10.7208 10.4473 11.0011 10.6592 11.2078C10.871 11.4145 11.1583 11.5306 11.4579 11.5306C11.7575 11.5306 12.0448 11.4145 12.2566 11.2078C12.4685 11.0011 12.5875 10.7208 12.5875 10.4285C12.5875 10.1363 12.4685 9.85595 12.2566 9.64928C12.0448 9.4426 11.7575 9.3265 11.4579 9.3265C11.1583 9.3265 10.871 9.4426 10.6592 9.64928C10.4473 9.85595 10.3283 10.1363 10.3283 10.4285ZM15.0349 10.4285C15.0349 10.7208 15.1539 11.0011 15.3657 11.2078C15.5776 11.4145 15.8649 11.5306 16.1645 11.5306C16.4641 11.5306 16.7514 11.4145 16.9632 11.2078C17.175 11.0011 17.294 10.7208 17.294 10.4285C17.294 10.1363 17.175 9.85595 16.9632 9.64928C16.7514 9.4426 16.4641 9.3265 16.1645 9.3265C15.8649 9.3265 15.5776 9.4426 15.3657 9.64928C15.1539 9.85595 15.0349 10.1363 15.0349 10.4285ZM5.62175 10.4285C5.62175 10.7208 5.74075 11.0011 5.95259 11.2078C6.16443 11.4145 6.45174 11.5306 6.75132 11.5306C7.05091 11.5306 7.33822 11.4145 7.55006 11.2078C7.76189 11.0011 7.8809 10.7208 7.8809 10.4285C7.8809 10.1363 7.76189 9.85595 7.55006 9.64928C7.33822 9.4426 7.05091 9.3265 6.75132 9.3265C6.45174 9.3265 6.16443 9.4426 5.95259 9.64928C5.74075 9.85595 5.62175 10.1363 5.62175 10.4285Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M21.1817 6.44282C20.6498 5.20991 19.8874 4.10328 18.9155 3.15277C17.9436 2.20456 16.8093 1.45838 15.5432 0.941802C14.2489 0.411445 12.8746 0.142822 11.4579 0.142822H11.4108C9.98474 0.14971 8.60336 0.42522 7.30435 0.967057C6.05004 1.49053 4.92517 2.2344 3.96268 3.18262C3.00018 4.13083 2.24478 5.23287 1.72235 6.46119C1.18109 7.73313 0.908113 9.08542 0.915173 10.4768C0.922232 12.0701 1.31288 13.652 2.04475 15.0663V18.5561C2.04475 19.1392 2.52953 19.6122 3.12726 19.6122H6.70661C8.15624 20.3262 9.77765 20.7074 11.4108 20.7143H11.4602C12.8699 20.7143 14.2371 20.4479 15.5244 19.9268C16.7834 19.4148 17.9153 18.6801 18.8849 17.741C19.8568 16.802 20.6216 15.7046 21.1558 14.4808C21.7112 13.2135 21.9936 11.8658 22.0006 10.4745C22.0077 9.07624 21.73 7.71935 21.1817 6.44282ZM17.6259 16.4989C15.9762 18.0923 13.7877 18.9694 11.4579 18.9694H11.4179C9.99886 18.9625 8.58924 18.6181 7.34435 17.9706L7.14668 17.8673H3.83325V14.6347L3.72735 14.4418C3.06372 13.2273 2.71073 11.852 2.70367 10.4676C2.69426 8.17854 3.59086 6.02956 5.23581 4.41093C6.8784 2.79231 9.07402 1.8969 11.4202 1.88772H11.4602C12.6369 1.88772 13.7782 2.11042 14.8537 2.55124C15.9033 2.98058 16.8446 3.59818 17.6541 4.38798C18.4613 5.17548 19.0967 6.09614 19.5367 7.12012C19.9933 8.18083 20.2215 9.30583 20.2168 10.4676C20.2027 12.7543 19.2826 14.8964 17.6259 16.4989Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                      Chat & Gọi
+                    </a>
+                    <a href="" class="btn-rounded-50-icon text-white bg-4B4FAF">
+                      <span class="icon">
+                        <svg
+                          width="17"
+                          height="17"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_80_3643)">
+                            <mask
+                              id="mask0_80_3643"
+                              style="mask-type: luminance"
+                              maskUnits="userSpaceOnUse"
+                              x="0"
+                              y="0"
+                              width="17"
+                              height="17"
+                            >
+                              <path
+                                d="M0.314453 0.428589H16.7145V16.4286H0.314453V0.428589Z"
+                                fill="white"
+                              />
+                            </mask>
+                            <g mask="url(#mask0_80_3643)">
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M15.7879 0.462778L1.0174 6.0022C0.87966 6.05414 0.761605 6.14609 0.679214 6.26565C0.596823 6.3852 0.554076 6.52656 0.55676 6.67059C0.559445 6.81463 0.60743 6.95439 0.694221 7.07094C0.781012 7.18748 0.902417 7.2752 1.042 7.32221L4.322 8.44335C4.46612 8.49262 4.61962 8.51017 4.77151 8.49475C4.92341 8.47935 5.06992 8.43135 5.20057 8.3542L12.3674 4.1382C12.4156 4.11418 12.471 4.10723 12.524 4.11854C12.5769 4.12985 12.6241 4.15873 12.6578 4.20025C12.6914 4.24176 12.7091 4.29335 12.708 4.34623C12.707 4.3991 12.6872 4.44999 12.652 4.4902L7.27517 9.8182C7.17991 9.90027 7.10344 10.001 7.05076 10.1138C6.99808 10.2267 6.97036 10.3491 6.96942 10.4731L6.94365 15.9714C6.95041 16.0787 6.99334 16.1808 7.06576 16.262C7.13818 16.3431 7.23604 16.3986 7.34412 16.4198C7.45219 16.4411 7.56444 16.4269 7.6634 16.3795C7.76236 16.332 7.84249 16.2541 7.89134 16.1576L9.86637 12.2491C9.98305 12.067 10.168 11.9366 10.3819 11.8859C10.5957 11.835 10.8214 11.8678 11.0109 11.9771L14.5146 13.8628C14.6267 13.9228 14.7525 13.9543 14.8804 13.9543C15.0084 13.9543 15.1342 13.9229 15.2464 13.8628C15.3585 13.8028 15.4533 13.716 15.5219 13.6108C15.5906 13.5055 15.631 13.3851 15.6392 13.2605L16.4685 0.906207C16.4689 0.827131 16.4491 0.749214 16.411 0.679409C16.3729 0.609605 16.3177 0.550088 16.2503 0.506172C16.1829 0.462257 16.1054 0.43531 16.0247 0.427738C15.9441 0.420166 15.8627 0.432204 15.7879 0.462778Z"
+                                fill="white"
+                              />
+                            </g>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_80_3643">
+                              <rect
+                                width="16.4"
+                                height="16"
+                                fill="white"
+                                transform="translate(0.314453 0.428589)"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </span>
+                      Ứng tuyển
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="info">
+                <p><strong>Ngành nghề:</strong> Nhân viên kinh doanh</p>
+                <p>
+                  <strong>Mức lương:</strong>
+                  <span class="text-red">Từ 12.000.000đ đến 30.000.000đ</span>
+                </p>
+                <p>
+                  <strong>Lượt xem:</strong> 867 |
+                  <strong>Cập nhật:</strong> 06/05/2025 (2 ngày trước)
+                </p>
+              </div>
             </div>
-            <a href="tel:0839697689">Hotline: 0839.697.689 </a>
-           </li>
-           <li>
-            <div class="icon">
-             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.72485 2.49265V5.17325L8.96468 5.73337V2.61268H2.24319V5.73337L1.48302 5.17325V2.61268C1.48302 2.00454 1.96312 1.82584 2.20318 1.8125H8.96468C9.57282 1.84451 9.72485 2.27927 9.72485 2.49265Z" fill="white" />
-              <rect width="5.12114" height="0.72016" rx="0.36008" transform="matrix(-1 0 0 1 8.16452 3.37207)" fill="white" />
-              <rect width="5.12114" height="0.72016" rx="0.36008" transform="matrix(-1 0 0 1 8.16452 4.8125)" fill="white" />
-              <path d="M5.84401 0.411511L7.6044 1.81182H6.44414L5.60396 1.17168L4.80378 1.81182H3.60351C4.12363 1.3984 5.21187 0.53954 5.40391 0.411511C5.59595 0.283483 5.77733 0.358166 5.84401 0.411511Z" fill="white" />
-              <path d="M11.0451 4.53239L9.72485 3.45215V4.41236L10.205 4.81245L8.96469 5.69265L5.60394 8.05317V8.93337C5.69996 8.93337 5.83065 8.85335 5.884 8.81334L6.68418 8.21321L9.44479 10.3337C9.73286 10.4937 9.91156 10.3737 9.96491 10.2937C10.221 10.0376 10.0449 9.81357 9.9249 9.73355L7.32432 7.77311L10.445 5.53261V10.3337C10.445 10.6858 10.1516 10.7738 10.0049 10.7738H6.12405V11.5339H10.0849C11.0131 11.4379 11.2185 10.7471 11.2052 10.4137V4.81245C11.2052 4.65242 11.0985 4.55906 11.0451 4.53239Z" fill="white" />
-              <path d="M5.56396 8.05317L1.00294 4.81245L1.48305 4.45237V3.45215L0.242773 4.45237C0.0187225 4.61241 -0.0106173 4.8658 0.00271893 4.97249V10.3737C0.0987406 11.3019 0.789561 11.5339 1.12297 11.5339H6.36414V10.7738H1.12297C0.77089 10.7738 0.736216 10.4004 0.762888 10.2137V5.53261L3.88358 7.77311L1.20299 9.77356C1.04295 9.9656 1.1363 10.2003 1.20299 10.2937C1.36302 10.4537 1.61641 10.387 1.7231 10.3337L4.52373 8.21321C4.72377 8.35991 5.17187 8.68531 5.36391 8.81334C5.55596 8.94137 5.57729 8.94671 5.56396 8.93337V8.05317Z" fill="white" />
-             </svg>
+          </div>
+          <div class="job-detail-main-com">
+            <h2>
+              <span class="icon">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.2038 4.60389L13.3382 5.45198L11.231 3.38555L12.095 2.53798C12.1355 2.49862 12.1835 2.46748 12.2363 2.44633C12.2891 2.42518 12.3457 2.41444 12.4027 2.41473C12.5201 2.41473 12.6294 2.45756 12.711 2.53798L14.2033 4.0002C14.2849 4.08038 14.3308 4.18897 14.3309 4.3022C14.331 4.41543 14.2853 4.52409 14.2038 4.60441M6.86405 11.6617L4.89285 9.73368L10.703 4.07436L12.6363 5.9695L6.86405 11.6617ZM4.37125 12.2398L4.47845 10.5306L6.08805 12.1067L4.37125 12.2398ZM14.8193 3.39651L13.3254 1.9369C12.8358 1.45437 11.9707 1.45437 11.4811 1.9369L10.2619 3.34011L3.76325 9.42975L3.33552 13.0796L3.54352 13.2545L7.17445 12.7704L13.3878 6.4019L14.8193 5.25667C15.327 4.75847 15.327 3.89628 14.8193 3.39651ZM13.5073 7.66777C13.2619 7.66777 13.0838 7.85995 13.0838 8.0986V13.794C13.0838 14.3616 12.6342 14.8462 12.0545 14.8462H2.90032C2.31952 14.8462 1.64752 14.3616 1.64752 13.794V4.82218C1.64752 4.25505 2.31952 3.64979 2.90085 3.64979H7.82938C8.07258 3.64979 8.26885 3.47328 8.26885 3.23462C8.26885 2.9944 8.07258 2.81946 7.82938 2.81946H2.90085C1.74245 2.81946 0.800049 3.68635 0.800049 4.8227V13.794C0.800049 14.9298 1.74245 15.675 2.90138 15.675H12.0534C13.2128 15.675 13.9297 14.9298 13.9297 13.794V8.0986C13.9297 7.85995 13.7499 7.66777 13.5062 7.66777"
+                    fill="#121F38"
+                  />
+                </svg>
+              </span>
+              Thông tin chung
+            </h2>
+            <div class="list-main-com-detail">
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/chuc-vu.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Chức vụ</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/yeu-cau-kinh-nghiem.png"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Yêu cầu kinh nghiệm</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/chuc-vu.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Thu nhập</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/chuc-vu.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Số lượng tuyển</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/hinh-thuc-lam-viec.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Hình thức làm việc</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/yeu-cau-bang-cap.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Yêu cầu bằng cấp</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/linh-vuc.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Lĩnh vực</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/linh-vuc.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Yêu cầu bằng cấp</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/thoi-gian-thu-viec.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Thời gian thử việc</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/loai-cong-viec.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Loại công việc</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/do-tuoi.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Độ tuổi</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
+              <div class="item-main-com-detail">
+                <div class="icon">
+                  <img
+                    src="./assets/images/job-detail/do-tuoi.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div class="info">
+                  <label>Hạn nộp hồ sơ</label>
+                  <span>Nhân viên</span>
+                </div>
+              </div>
             </div>
-            <a href="mailto:hotro.haruco@gmail.com">Email: hotro.haruco@gmail.com</a>
-           </li>
-          </ul>
-          <ul class="list-sns-ic d-flex">
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_google-plus.svg" alt="icon" />
-            </a>
-           </li>
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_facebook.svg" alt="icon" />
-            </a>
-           </li>
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_twitter.svg" alt="icon" />
-            </a>
-           </li>
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_youtube.svg" alt="icon" />
-            </a>
-           </li>
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_in.svg" alt="icon" />
-            </a>
-           </li>
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_tiktok.svg" alt="icon" />
-            </a>
-           </li>
-          </ul>
-         </div>
-        </div>
-       </div>
-       <div class="col-xl-3">
-        <div class="box-menu">
-         <div class="title-ft">
-          <h4>Thông tin chung</h4>
-         </div>
-         <ul class="menu-ft mb-5">
-          <li><a href="#"> Giới thiệu về Haruco</a></li>
-          <li><a href="#"> Giới thiệu chung</a></li>
-          <li><a href="#"> Chính sách bảo hành</a></li>
-         </ul>
-         <div class="title-ft">
-          <h4>Sản phẩm haruco</h4>
-         </div>
-         <ul class="menu-ft">
-          <li><a href="#"> Giới thiệu chung</a></li>
-          <li><a href="#"> Giới thiệu chung</a></li>
-          <li><a href="#"> Giới thiệu chung</a></li>
-          <li><a href="#"> Giới thiệu chung</a></li>
-          <li><a href="#"> Giới thiệu chung</a></li>
-         </ul>
-        </div>
-       </div>
-       <div class="col-xl-4">
-        <div class="map">
-         <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7374156101046!2d105.74344307599799!3d21.003160388655886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453703216c9e7%3A0x80cb3c937b9f8751!2sC%C3%B4ng%20Ty%20Tnhh%20Rezkin%20Vi%E1%BB%87t%20Nam!5e0!3m2!1sen!2s!4v1748109735181!5m2!1sen!2s" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="footer-bottom">
-      <div class="row flex-md-row flex-column-reverse">
-       <div class="col-md-7">
-        <div class="text text-md-left text-center">© Copyright - Công ty TNHH Rezkin Việt Nam</div>
-       </div>
-       <div class="col-md-5">
-        <ul class="list-menu-ft-bot d-none d-md-flex justify-content-end align-items-center">
-         <li>
-          <a href=""> Giới thiệu </a>
-         </li>
-         <li>
-          <a href=""> Sản phẩm </a>
-         </li>
-         <li>
-          <a href=""> tin tức </a>
-         </li>
-         <li>
-          <a href=""> Liên hệ </a>
-         </li>
-        </ul>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section>
-   <section class="footer-m d-lg-none">
-    <div class="container-fluid">
-     <div class="footer-middle footer-middle-mobile">
-      <div class="row">
-       <div class="px-0">
-        <div class="info-company-ft text-center">
-         <div class="logo ml-auto mr-auto">
-          <a href="">
-           <img src="./assets/images/logo-white.svg" alt="image" />
-          </a>
-         </div>
-         <p class="des-intro text-white">Rezkin cam kết đồng hành cùng khách hàng bằng chất lượng và tinh thần trách nhiệm. Chúng tôi thấu hiểu rằng sự uy tín không chỉ là thương hiệu – đó là niềm tin được xây dựng từ mỗi trải nghiệm của khách hàng.</p>
-        </div>
-       </div>
-       <div class="col-6 pl-0">
-        <div class="box-menu">
-         <div class="title-ft">
-          <h4>Thông tin chung</h4>
-         </div>
-         <ul class="menu-ft mb-5">
-          <li><a href="#"> Giới thiệu về Haruco</a></li>
-          <li><a href="#"> Giới thiệu chung</a></li>
-          <li><a href="#"> Chính sách bảo hành</a></li>
-         </ul>
-        </div>
-       </div>
-       <div class="col-6 pl-0">
-        <div class="box-menu">
-         <div class="title-ft">
-          <h4>Sản phẩm haruco</h4>
-         </div>
-         <ul class="menu-ft">
-          <li><a href="#"> Giới thiệu chung</a></li>
-          <li><a href="#"> Giới thiệu chung</a></li>
-          <li><a href="#"> Giới thiệu chung</a></li>
-          <li><a href="#"> Giới thiệu chung</a></li>
-          <li><a href="#"> Giới thiệu chung</a></li>
-         </ul>
-        </div>
-       </div>
-       <div class="col-12 px-0">
-        <div class="info-company-ft border-bottom-0 mb-0">
-         <div class="info">
-          <h5>Công ty TNHH Rezkin Việt Nam</h5>
-          <ul class="list-info">
-           <li>
-            <div class="icon">
-             <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="5.23055" cy="4.61608" r="2.07702" fill="white" />
-              <path d="M5.23055 1.07697V0C2.09195 0.0615412 0.845741 2.48729 0.614961 3.69247C0.245713 5.29255 0.871382 6.64132 1.23037 7.11571L5.23055 12.4236V10.5389C4.48693 9.55171 2.85352 7.37726 2.26888 6.57722C1.68424 5.77718 1.61501 5.06433 1.65347 4.80791C1.71501 1.8847 4.06384 1.10261 5.23055 1.07697Z" fill="white" />
-              <path d="M5.23055 1.08031V0C8.39645 0.0617318 9.6535 2.49499 9.88629 3.70391C10.2587 5.30893 9.62764 6.66189 9.26552 7.13774L5.23055 12.4621V10.5716C5.98064 9.58128 7.62826 7.4001 8.21798 6.59758C8.80771 5.79507 8.87754 5.08001 8.83875 4.82279C8.77667 1.89054 6.40742 1.10603 5.23055 1.08031Z" fill="white" />
-              <circle cx="5.23055" cy="4.6155" r="0.923119" fill="white" />
-             </svg>
+          </div>
+          <div class="job-detail-most">
+            <div class="item-job-detail-most">
+              <h3>Mô tả công việc</h3>
+              <div class="des">
+                <p>
+                  Tiếp nhận thông tin tuyển dụng từng tháng của công ty <br />
+                  Tạo nguồn tuyển dụng, tìm kiếm hồ sơ ứng viên thông qua
+                  Facebook, website,... <br />
+                  Gửi CV về bộ phận tuyển dụng của công ty <br />
+                  Theo dõi tình trạng ứng viên phù hợp <br />
+                  Chăm sóc ứng viên trong quá trình hỗ trợ. <br />
+                  Cơ chế nhận 500.000 VND/ nhân sự onboard ( Ghi nhận kết quả từ
+                  ngày thứ 2 ứng viên nhận việc) <br />
+                </p>
+              </div>
             </div>
-            <span>Địa chỉ: Đại Áng, Thanh Trì, Hà Nội</span>
-           </li>
-           <li>
-            <div class="icon">
-             <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.86265 0.34082H0.216757C-0.981381 5.07772 3.07898 8.8825 5.25892 10.1928C7.6552 11.6258 10.0848 11.4201 11 11.1382V8.55078C11 8.03331 10.6339 7.90394 10.4509 7.90394L7.85489 7.35661L6.40714 8.74981C4.60993 7.9537 3.09562 5.89706 2.56311 4.96825L4.06078 3.47553C3.89438 2.79552 3.54159 1.32602 3.46171 0.888151C3.38184 0.450287 3.02905 0.34082 2.86265 0.34082Z" fill="white" />
-             </svg>
+            <div class="item-job-detail-most">
+              <h3>Yêu cầu công việc</h3>
+              <div class="des">
+                <p>
+                  Tiếp nhận thông tin tuyển dụng từng tháng của công ty <br />
+                  Tạo nguồn tuyển dụng, tìm kiếm hồ sơ ứng viên thông qua
+                  Facebook, website,... <br />
+                  Gửi CV về bộ phận tuyển dụng của công ty <br />
+                  Theo dõi tình trạng ứng viên phù hợp <br />
+                  Chăm sóc ứng viên trong quá trình hỗ trợ. <br />
+                  Cơ chế nhận 500.000 VND/ nhân sự onboard ( Ghi nhận kết quả từ
+                  ngày thứ 2 ứng viên nhận việc) <br />
+                </p>
+              </div>
             </div>
-            <a href="tel:0839697689">Hotline: 0839.697.689 </a>
-           </li>
-           <li>
-            <div class="icon">
-             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.72485 2.49265V5.17325L8.96468 5.73337V2.61268H2.24319V5.73337L1.48302 5.17325V2.61268C1.48302 2.00454 1.96312 1.82584 2.20318 1.8125H8.96468C9.57282 1.84451 9.72485 2.27927 9.72485 2.49265Z" fill="white" />
-              <rect width="5.12114" height="0.72016" rx="0.36008" transform="matrix(-1 0 0 1 8.16452 3.37207)" fill="white" />
-              <rect width="5.12114" height="0.72016" rx="0.36008" transform="matrix(-1 0 0 1 8.16452 4.8125)" fill="white" />
-              <path d="M5.84401 0.411511L7.6044 1.81182H6.44414L5.60396 1.17168L4.80378 1.81182H3.60351C4.12363 1.3984 5.21187 0.53954 5.40391 0.411511C5.59595 0.283483 5.77733 0.358166 5.84401 0.411511Z" fill="white" />
-              <path d="M11.0451 4.53239L9.72485 3.45215V4.41236L10.205 4.81245L8.96469 5.69265L5.60394 8.05317V8.93337C5.69996 8.93337 5.83065 8.85335 5.884 8.81334L6.68418 8.21321L9.44479 10.3337C9.73286 10.4937 9.91156 10.3737 9.96491 10.2937C10.221 10.0376 10.0449 9.81357 9.9249 9.73355L7.32432 7.77311L10.445 5.53261V10.3337C10.445 10.6858 10.1516 10.7738 10.0049 10.7738H6.12405V11.5339H10.0849C11.0131 11.4379 11.2185 10.7471 11.2052 10.4137V4.81245C11.2052 4.65242 11.0985 4.55906 11.0451 4.53239Z" fill="white" />
-              <path d="M5.56396 8.05317L1.00294 4.81245L1.48305 4.45237V3.45215L0.242773 4.45237C0.0187225 4.61241 -0.0106173 4.8658 0.00271893 4.97249V10.3737C0.0987406 11.3019 0.789561 11.5339 1.12297 11.5339H6.36414V10.7738H1.12297C0.77089 10.7738 0.736216 10.4004 0.762888 10.2137V5.53261L3.88358 7.77311L1.20299 9.77356C1.04295 9.9656 1.1363 10.2003 1.20299 10.2937C1.36302 10.4537 1.61641 10.387 1.7231 10.3337L4.52373 8.21321C4.72377 8.35991 5.17187 8.68531 5.36391 8.81334C5.55596 8.94137 5.57729 8.94671 5.56396 8.93337V8.05317Z" fill="white" />
-             </svg>
+            <div class="item-job-detail-most">
+              <h3>Quyền lợi</h3>
+              <div class="des">
+                <p>
+                  Tiếp nhận thông tin tuyển dụng từng tháng của công ty <br />
+                  Tạo nguồn tuyển dụng, tìm kiếm hồ sơ ứng viên thông qua
+                  Facebook, website,... <br />
+                  Gửi CV về bộ phận tuyển dụng của công ty <br />
+                  Theo dõi tình trạng ứng viên phù hợp <br />
+                  Chăm sóc ứng viên trong quá trình hỗ trợ. <br />
+                  Cơ chế nhận 500.000 VND/ nhân sự onboard ( Ghi nhận kết quả từ
+                  ngày thứ 2 ứng viên nhận việc) <br />
+                </p>
+              </div>
             </div>
-            <a href="mailto:hotro.haruco@gmail.com">Email: hotro.haruco@gmail.com</a>
-           </li>
-          </ul>
-          <ul class="list-sns-ic d-flex">
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_google-plus.svg" alt="icon" />
-            </a>
-           </li>
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_facebook.svg" alt="icon" />
-            </a>
-           </li>
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_twitter.svg" alt="icon" />
-            </a>
-           </li>
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_youtube.svg" alt="icon" />
-            </a>
-           </li>
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_in.svg" alt="icon" />
-            </a>
-           </li>
-           <li>
-            <a href="">
-             <img src="./assets/images/icon/ic_tiktok.svg" alt="icon" />
-            </a>
-           </li>
-          </ul>
-         </div>
+            <div class="item-job-detail-most">
+              <h3>Địa điểm làm việc</h3>
+              <div class="des">
+                <p>
+                  Hà Nội: Tòa A UDIC Riverside 1, số 122 Vĩnh Tuy, Hai Bà Trưng
+                </p>
+              </div>
+            </div>
+            <div class="item-job-detail-most">
+              <h3>Thời gian làm việc</h3>
+              <div class="des">
+                <p>
+                  Làm hành chính 8h00 - 17h00 từ thứ 2 đến t6, t7 làm từ 8h00 –
+                  12h00.
+                </p>
+              </div>
+            </div>
+            <div class="item-job-detail-most">
+              <h3>Cách thức ứng tuyển</h3>
+              <div class="des">
+                <p>
+                  Ứng viên nộp hồ sơ trực tuyến bằng cách bấm Ứng tuyển ngay
+                  dưới đây.<br />
+                  Hạn nộp hồ sơ: 30/05/2025
+                </p>
+              </div>
+              <a
+                href=""
+                class="btn-rounded-50-icon text-white bg-4B4FAF d-md-none"
+              >
+                <span class="icon">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_80_3643)">
+                      <mask
+                        id="mask0_80_3643"
+                        style="mask-type: luminance"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="17"
+                        height="17"
+                      >
+                        <path
+                          d="M0.314453 0.428589H16.7145V16.4286H0.314453V0.428589Z"
+                          fill="white"
+                        ></path>
+                      </mask>
+                      <g mask="url(#mask0_80_3643)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.7879 0.462778L1.0174 6.0022C0.87966 6.05414 0.761605 6.14609 0.679214 6.26565C0.596823 6.3852 0.554076 6.52656 0.55676 6.67059C0.559445 6.81463 0.60743 6.95439 0.694221 7.07094C0.781012 7.18748 0.902417 7.2752 1.042 7.32221L4.322 8.44335C4.46612 8.49262 4.61962 8.51017 4.77151 8.49475C4.92341 8.47935 5.06992 8.43135 5.20057 8.3542L12.3674 4.1382C12.4156 4.11418 12.471 4.10723 12.524 4.11854C12.5769 4.12985 12.6241 4.15873 12.6578 4.20025C12.6914 4.24176 12.7091 4.29335 12.708 4.34623C12.707 4.3991 12.6872 4.44999 12.652 4.4902L7.27517 9.8182C7.17991 9.90027 7.10344 10.001 7.05076 10.1138C6.99808 10.2267 6.97036 10.3491 6.96942 10.4731L6.94365 15.9714C6.95041 16.0787 6.99334 16.1808 7.06576 16.262C7.13818 16.3431 7.23604 16.3986 7.34412 16.4198C7.45219 16.4411 7.56444 16.4269 7.6634 16.3795C7.76236 16.332 7.84249 16.2541 7.89134 16.1576L9.86637 12.2491C9.98305 12.067 10.168 11.9366 10.3819 11.8859C10.5957 11.835 10.8214 11.8678 11.0109 11.9771L14.5146 13.8628C14.6267 13.9228 14.7525 13.9543 14.8804 13.9543C15.0084 13.9543 15.1342 13.9229 15.2464 13.8628C15.3585 13.8028 15.4533 13.716 15.5219 13.6108C15.5906 13.5055 15.631 13.3851 15.6392 13.2605L16.4685 0.906207C16.4689 0.827131 16.4491 0.749214 16.411 0.679409C16.3729 0.609605 16.3177 0.550088 16.2503 0.506172C16.1829 0.462257 16.1054 0.43531 16.0247 0.427738C15.9441 0.420166 15.8627 0.432204 15.7879 0.462778Z"
+                          fill="white"
+                        ></path>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_80_3643">
+                        <rect
+                          width="16.4"
+                          height="16"
+                          fill="white"
+                          transform="translate(0.314453 0.428589)"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                Ứng tuyển
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="map mt-4 w-100">
-         <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7374156101046!2d105.74344307599799!3d21.003160388655886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453703216c9e7%3A0x80cb3c937b9f8751!2sC%C3%B4ng%20Ty%20Tnhh%20Rezkin%20Vi%E1%BB%87t%20Nam!5e0!3m2!1sen!2s!4v1748109735181!5m2!1sen!2s" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <section class="apply-now">
+        <div class="container-fluid">
+          <div class="content">
+            <div class="form-apply-now">
+              <h2 class="text-white text-center">ứng tuyển nhanh</h2>
+              <p class="des text-white text-center">
+                Bạn thấy mình phù hợp với vị trí tuyển dụng nào của chúng tôi,
+                hãy ứng tuyển ngay để có công việc tốt nhất
+              </p>
+              <form action="">
+                <div class="custom-field-group custom-field-one-half">
+                  <input type="text" placeholder="Họ và tên" class="border-0" />
+                </div>
+                <div class="custom-field-group custom-field-one-half">
+                  <input
+                    type="text"
+                    placeholder="Số điện thoại"
+                    class="border-0"
+                  />
+                </div>
+                <div class="custom-field-group custom-field-one-half">
+                  <input
+                    type="text"
+                    placeholder="Email của bạn"
+                    class="border-0"
+                  />
+                </div>
+                <div class="custom-field-group custom-field-one-half">
+                  <select class="custom-select-i">
+                    <option value="">Vị trí ứng tuyển</option>
+                    <option value="">Nhân viên gầm cầu</option>
+                    <option value="">Nhân viên đầu cầu</option>
+                    <option value="">Nhân viên cuối cầu</option>
+                  </select>
+                </div>
+                <div class="custom-field-group">
+                  <div class="file-upload">
+                    <div class="icon">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.3431 0H5.65688C2.53267 0 0 2.53267 0 5.65688V18.3431C0 21.4673 2.53267 24 5.65688 24H18.3431C21.4673 24 24 21.4673 24 18.3431V5.65688C24 2.53267 21.4673 0 18.3431 0Z"
+                          fill="url(#paint0_linear_67_60)"
+                        />
+                        <path
+                          d="M20.055 11.804C19.7423 11.804 19.4423 11.9282 19.2211 12.1494C19 12.3705 18.8757 12.6705 18.8757 12.9833V15.7953C18.8748 16.569 18.5671 17.3108 18.02 17.8579C17.4729 18.405 16.7311 18.7127 15.9574 18.7136H8.04257C7.26886 18.7127 6.5271 18.405 5.98001 17.8579C5.43291 17.3108 5.12517 16.569 5.12428 15.7953V12.9833C5.12428 12.6705 5.00003 12.3705 4.77887 12.1494C4.5577 11.9282 4.25773 11.804 3.94495 11.804C3.63218 11.804 3.33221 11.9282 3.11104 12.1494C2.88988 12.3705 2.76563 12.6705 2.76562 12.9833V15.7953C2.76769 17.1942 3.32431 18.5352 4.31348 19.5244C5.30265 20.5136 6.64367 21.0702 8.04257 21.0723H15.9574C17.3563 21.0702 18.6973 20.5136 19.6865 19.5244C20.6757 18.5352 21.2323 17.1942 21.2344 15.7953V12.9833C21.2344 12.6705 21.1101 12.3705 20.889 12.1494C20.6678 11.9282 20.3678 11.804 20.055 11.804Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M9.19036 8.08947C9.34535 8.08972 9.49886 8.05932 9.64206 8.00004C9.78527 7.94075 9.91534 7.85374 10.0248 7.74402L10.8147 6.95353V14.0251C10.8147 14.3377 10.9389 14.6375 11.16 14.8586C11.381 15.0796 11.6809 15.2038 11.9935 15.2038C12.1483 15.2038 12.3017 15.1733 12.4447 15.1141C12.5878 15.0548 12.7177 14.9679 12.8272 14.8584C12.9367 14.7489 13.0235 14.6189 13.0827 14.4758C13.1419 14.3327 13.1723 14.1793 13.1723 14.0245V6.95298L13.9739 7.75403C14.1952 7.97533 14.4953 8.09966 14.8083 8.09966C15.1213 8.09966 15.4214 7.97533 15.6427 7.75403C15.8641 7.53272 15.9884 7.23257 15.9884 6.9196C15.9884 6.60663 15.8641 6.30647 15.6427 6.08517L12.8263 3.27202C12.8073 3.25311 12.7873 3.23531 12.7678 3.21639L12.7539 3.20471C12.7125 3.16988 12.6688 3.13774 12.6232 3.10847L12.6165 3.10458C12.5692 3.07485 12.5197 3.04864 12.4686 3.02614C12.4172 3.00415 12.3644 2.98557 12.3106 2.97051H12.305C12.253 2.95611 12.2 2.94551 12.1465 2.9388H12.132C12.1075 2.9388 12.0831 2.93324 12.0586 2.93213H12.0536C12.0285 2.93213 12.003 2.93213 11.9779 2.93213H11.959C11.934 2.93213 11.9089 2.93213 11.8845 2.93658C11.8583 2.93658 11.8327 2.9427 11.8066 2.94715H11.7916C11.7375 2.9567 11.6842 2.96989 11.6319 2.98665H11.6269C11.5714 3.0051 11.5173 3.0276 11.465 3.05396C11.4394 3.06731 11.4138 3.08121 11.3883 3.09679C11.3654 3.1107 11.3432 3.12516 11.3209 3.14074L11.312 3.14686C11.2905 3.16243 11.2694 3.17856 11.2486 3.19525C11.2459 3.19814 11.2429 3.20075 11.2397 3.20304C11.2234 3.21713 11.2073 3.2316 11.1913 3.24643C11.1857 3.25134 11.1803 3.25654 11.1752 3.26201L11.1635 3.27258L8.36094 6.07682C8.19618 6.24182 8.08403 6.45195 8.03866 6.68067C7.99328 6.90938 8.01673 7.14641 8.10603 7.36181C8.19533 7.5772 8.34648 7.76129 8.54037 7.8908C8.73426 8.02032 8.9622 8.08946 9.19537 8.08947H9.19036Z"
+                          fill="white"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_67_60"
+                            x1="12"
+                            y1="0"
+                            x2="12"
+                            y2="24"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#00AFFF" />
+                            <stop offset="1" stop-color="#0063FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <input type="file" id="chooseFile" />
+                    <label for="chooseFile" class="text-white"
+                      >Upload CV (file)
+                    </label>
+                    <span id="noFile" class="text-white"></span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                  <button
+                    type="submit"
+                    class="btn-linear-rounded-orange border-0 text-white btn-appy-now text-uppercase"
+                  >
+                    Gửi ngay
+                    <span class="icon ml-1">
+                      <svg
+                        width="20"
+                        height="17"
+                        viewBox="0 0 20 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.73526 3.71601L5.21785 5.27042C5.41002 5.47443 5.51499 5.7458 5.50985 6.02534C5.50472 6.30487 5.38989 6.5699 5.19042 6.76261C4.99095 6.95532 4.72302 7.06009 4.44506 7.05407C4.1671 7.04804 3.90166 6.93171 3.70663 6.73044L0.684168 3.56384C0.545331 3.4188 0.449818 3.23756 0.408711 3.04113C0.367605 2.8447 0.38259 2.64114 0.451928 2.45406C0.521265 2.26699 0.642114 2.10407 0.800451 1.98421C0.958788 1.86434 1.14812 1.79246 1.34649 1.77688L18.7092 0.407194C18.909 0.391285 19.1097 0.433132 19.2877 0.527811C19.4657 0.622491 19.6137 0.766067 19.7142 0.941656C19.8147 1.11724 19.8636 1.31755 19.8551 1.519C19.8466 1.72046 19.781 1.9147 19.6662 2.07888L9.69282 16.3573C9.57735 16.5228 9.41669 16.6508 9.22999 16.7263C9.04328 16.8017 8.8384 16.8214 8.63976 16.7828C8.44112 16.7443 8.2571 16.6492 8.10963 16.509C7.96215 16.3687 7.85744 16.1892 7.80798 15.9917L5.93569 8.49412C5.87959 8.27018 5.8974 8.03469 5.98644 7.82335C6.07547 7.612 6.23087 7.43632 6.42907 7.32293L10.0739 5.23652C10.3155 5.09818 10.6029 5.06265 10.8728 5.13775C11.1427 5.21285 11.3729 5.39242 11.5129 5.63697C11.6529 5.88151 11.6911 6.17099 11.6192 6.44173C11.5473 6.71247 11.3712 6.94228 11.1295 7.08062L8.17175 8.77375L9.28682 13.2367L16.6475 2.69773L3.73526 3.71601Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="img mb-0 d-md-flex d-none">
+              <img src="./assets/images/img_apply-now.png" alt="img" />
+            </div>
+          </div>
         </div>
-        <div class="text-copyright text-center text-white pt-2 pb-3">© Copyright - Công ty TNHH Rezkin Việt Nam</div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- booststrap -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.0/swiper-bundle.min.js" integrity="sha512-nfTMywTuPQr/IAYeoMo3Yt/bMvHSwHZqNDy9nDkGBssthLnWhQLxJjjqhGdxTzyZBf+EQ9AcfDqYGLIZze8DbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./assets/js/index.js"></script>
- </body>
+      </section>
+      <section class="question-and-answer">
+        <div class="container-fluid">
+          <div class="content">
+            <div class="heading-question">
+              <div class="img d-md-block d-none">
+                <img
+                  src="./assets/images/explain-box.png"
+                  alt="Giải đáp thắc mắc"
+                />
+              </div>
+              <div class="img mb-0 d-md-none">
+                <img
+                  src="./assets/images/explain-box_sp.png"
+                  alt="Giải đáp thắc mắc"
+                />
+              </div>
+              <div class="faq">
+                <h2>Những câu hỏi thường gặp</h2>
+                <div class="des">
+                  Chúng tôi luôn sẵn sàng giải đáp mọi thắc mắc của bạn về công
+                  việc bạn quan tâm <strong class="d-block">rezkin.vn</strong>
+                </div>
+              </div>
+            </div>
+            <div class="list-faq">
+              <div class="accordion accordion-faq" id="accordionFAQ">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <button
+                      class="border-0 w-100"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <span
+                        >Thời gian làm việc như thế nào? Có cần kinh nghiệm
+                        không?</span
+                      >
+                    </button>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionFAQ"
+                  >
+                    <div class="card-body">
+                      Hoa hồng theo doanh số, thưởng doanh thu, thưởng tháng,
+                      thưởng vượt chỉ tiêu, thưởng hàng năm theo kết quả sản
+                      xuất kinh doanh… Thu nhập xứng đáng theo năng lực không
+                      giới hạn. Bảo hiểm, ngày phép, chế độ thưởng các ngày lễ,
+                      thưởng theo hiệu quả kinh doanh, lương tháng 13,…
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <button
+                      class="border-0 w-100 collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <span
+                        >Thời gian làm việc như thế nào? Có cần kinh nghiệm
+                        không?</span
+                      >
+                    </button>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionFAQ"
+                  >
+                    <div class="card-body">
+                      Some placeholder content for the second accordion panel.
+                      This panel is hidden by default.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <button
+                      class="border-0 w-100 collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <span
+                        >Thời gian làm việc như thế nào? Có cần kinh nghiệm
+                        không?</span
+                      >
+                    </button>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionFAQ"
+                  >
+                    <div class="card-body">
+                      <p>
+                        Hoa hồng theo doanh số, thưởng doanh thu, thưởng tháng,
+                        thưởng vượt chỉ tiêu, thưởng hàng năm theo kết quả sản
+                        xuất kinh doanh… Thu nhập xứng đáng theo năng lực không
+                        giới hạn.
+                      </p>
+                      <p>
+                        Bảo hiểm, ngày phép, chế độ thưởng các ngày lễ, thưởng
+                        theo hiệu quả kinh doanh, lương tháng 13,…
+                      </p>
+                      <p>
+                        Bảo hiểm, ngày phép, chế độ thưởng các ngày lễ, thưởng
+                        theo hiệu quả kinh doanh, lương tháng 13,…
+                      </p>
+                      <p>
+                        Bảo hiểm, ngày phép, chế độ thưởng các ngày lễ, thưởng
+                        theo hiệu quả kinh doanh, lương tháng 13,…
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-page">
+      <section class="footer-m d-none d-lg-block">
+        <div class="container-fluid">
+          <div class="footer-middle">
+            <div class="row">
+              <div class="col-xl-5">
+                <div class="info-company-ft">
+                  <div class="logo">
+                    <a href="">
+                      <img src="./assets/images/logo-white.svg" alt="image" />
+                    </a>
+                  </div>
+                  <p class="des-intro text-white">
+                    Rezkin cam kết đồng hành cùng khách hàng bằng chất lượng và
+                    tinh thần trách nhiệm. Chúng tôi thấu hiểu rằng sự uy tín
+                    không chỉ là thương hiệu – đó là niềm tin được xây dựng từ
+                    mỗi trải nghiệm của khách hàng.
+                  </p>
+                  <div class="info">
+                    <h5>Công ty TNHH Rezkin Việt Nam</h5>
+                    <ul class="list-info">
+                      <li>
+                        <div class="icon">
+                          <svg
+                            width="10"
+                            height="13"
+                            viewBox="0 0 10 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="5.23055"
+                              cy="4.61608"
+                              r="2.07702"
+                              fill="white"
+                            />
+                            <path
+                              d="M5.23055 1.07697V0C2.09195 0.0615412 0.845741 2.48729 0.614961 3.69247C0.245713 5.29255 0.871382 6.64132 1.23037 7.11571L5.23055 12.4236V10.5389C4.48693 9.55171 2.85352 7.37726 2.26888 6.57722C1.68424 5.77718 1.61501 5.06433 1.65347 4.80791C1.71501 1.8847 4.06384 1.10261 5.23055 1.07697Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M5.23055 1.08031V0C8.39645 0.0617318 9.6535 2.49499 9.88629 3.70391C10.2587 5.30893 9.62764 6.66189 9.26552 7.13774L5.23055 12.4621V10.5716C5.98064 9.58128 7.62826 7.4001 8.21798 6.59758C8.80771 5.79507 8.87754 5.08001 8.83875 4.82279C8.77667 1.89054 6.40742 1.10603 5.23055 1.08031Z"
+                              fill="white"
+                            />
+                            <circle
+                              cx="5.23055"
+                              cy="4.6155"
+                              r="0.923119"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <span>Địa chỉ: Đại Áng, Thanh Trì, Hà Nội</span>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <svg
+                            width="11"
+                            height="12"
+                            viewBox="0 0 11 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.86265 0.34082H0.216757C-0.981381 5.07772 3.07898 8.8825 5.25892 10.1928C7.6552 11.6258 10.0848 11.4201 11 11.1382V8.55078C11 8.03331 10.6339 7.90394 10.4509 7.90394L7.85489 7.35661L6.40714 8.74981C4.60993 7.9537 3.09562 5.89706 2.56311 4.96825L4.06078 3.47553C3.89438 2.79552 3.54159 1.32602 3.46171 0.888151C3.38184 0.450287 3.02905 0.34082 2.86265 0.34082Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <a href="tel:0839697689">Hotline: 0839.697.689 </a>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.72485 2.49265V5.17325L8.96468 5.73337V2.61268H2.24319V5.73337L1.48302 5.17325V2.61268C1.48302 2.00454 1.96312 1.82584 2.20318 1.8125H8.96468C9.57282 1.84451 9.72485 2.27927 9.72485 2.49265Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="5.12114"
+                              height="0.72016"
+                              rx="0.36008"
+                              transform="matrix(-1 0 0 1 8.16452 3.37207)"
+                              fill="white"
+                            />
+                            <rect
+                              width="5.12114"
+                              height="0.72016"
+                              rx="0.36008"
+                              transform="matrix(-1 0 0 1 8.16452 4.8125)"
+                              fill="white"
+                            />
+                            <path
+                              d="M5.84401 0.411511L7.6044 1.81182H6.44414L5.60396 1.17168L4.80378 1.81182H3.60351C4.12363 1.3984 5.21187 0.53954 5.40391 0.411511C5.59595 0.283483 5.77733 0.358166 5.84401 0.411511Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M11.0451 4.53239L9.72485 3.45215V4.41236L10.205 4.81245L8.96469 5.69265L5.60394 8.05317V8.93337C5.69996 8.93337 5.83065 8.85335 5.884 8.81334L6.68418 8.21321L9.44479 10.3337C9.73286 10.4937 9.91156 10.3737 9.96491 10.2937C10.221 10.0376 10.0449 9.81357 9.9249 9.73355L7.32432 7.77311L10.445 5.53261V10.3337C10.445 10.6858 10.1516 10.7738 10.0049 10.7738H6.12405V11.5339H10.0849C11.0131 11.4379 11.2185 10.7471 11.2052 10.4137V4.81245C11.2052 4.65242 11.0985 4.55906 11.0451 4.53239Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M5.56396 8.05317L1.00294 4.81245L1.48305 4.45237V3.45215L0.242773 4.45237C0.0187225 4.61241 -0.0106173 4.8658 0.00271893 4.97249V10.3737C0.0987406 11.3019 0.789561 11.5339 1.12297 11.5339H6.36414V10.7738H1.12297C0.77089 10.7738 0.736216 10.4004 0.762888 10.2137V5.53261L3.88358 7.77311L1.20299 9.77356C1.04295 9.9656 1.1363 10.2003 1.20299 10.2937C1.36302 10.4537 1.61641 10.387 1.7231 10.3337L4.52373 8.21321C4.72377 8.35991 5.17187 8.68531 5.36391 8.81334C5.55596 8.94137 5.57729 8.94671 5.56396 8.93337V8.05317Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <a href="mailto:hotro.haruco@gmail.com"
+                          >Email: hotro.haruco@gmail.com</a
+                        >
+                      </li>
+                    </ul>
+                    <ul class="list-sns-ic d-flex">
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_google-plus.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_facebook.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_twitter.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_youtube.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_in.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_tiktok.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="box-menu">
+                  <div class="title-ft">
+                    <h4>Thông tin chung</h4>
+                  </div>
+                  <ul class="menu-ft mb-5">
+                    <li><a href="#"> Giới thiệu về Haruco</a></li>
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                    <li><a href="#"> Chính sách bảo hành</a></li>
+                  </ul>
+                  <div class="title-ft">
+                    <h4>Sản phẩm haruco</h4>
+                  </div>
+                  <ul class="menu-ft">
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="map">
+                  <iframe
+                    class="w-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7374156101046!2d105.74344307599799!3d21.003160388655886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453703216c9e7%3A0x80cb3c937b9f8751!2sC%C3%B4ng%20Ty%20Tnhh%20Rezkin%20Vi%E1%BB%87t%20Nam!5e0!3m2!1sen!2s!4v1748109735181!5m2!1sen!2s"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row flex-md-row flex-column-reverse">
+              <div class="col-md-7">
+                <div class="text text-md-left text-center">
+                  © Copyright - Công ty TNHH Rezkin Việt Nam
+                </div>
+              </div>
+              <div class="col-md-5">
+                <ul
+                  class="list-menu-ft-bot d-none d-md-flex justify-content-end align-items-center"
+                >
+                  <li>
+                    <a href=""> Giới thiệu </a>
+                  </li>
+                  <li>
+                    <a href=""> Sản phẩm </a>
+                  </li>
+                  <li>
+                    <a href=""> tin tức </a>
+                  </li>
+                  <li>
+                    <a href=""> Liên hệ </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-m d-lg-none">
+        <div class="container-fluid">
+          <div class="footer-middle footer-middle-mobile">
+            <div class="row">
+              <div class="px-0">
+                <div class="info-company-ft text-center">
+                  <div class="logo ml-auto mr-auto">
+                    <a href="">
+                      <img src="./assets/images/logo-white.svg" alt="image" />
+                    </a>
+                  </div>
+                  <p class="des-intro text-white">
+                    Rezkin cam kết đồng hành cùng khách hàng bằng chất lượng và
+                    tinh thần trách nhiệm. Chúng tôi thấu hiểu rằng sự uy tín
+                    không chỉ là thương hiệu – đó là niềm tin được xây dựng từ
+                    mỗi trải nghiệm của khách hàng.
+                  </p>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="box-menu">
+                  <div class="title-ft">
+                    <h4>Thông tin chung</h4>
+                  </div>
+                  <ul class="menu-ft mb-5">
+                    <li><a href="#"> Giới thiệu về Haruco</a></li>
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                    <li><a href="#"> Chính sách bảo hành</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 pl-0">
+                <div class="box-menu">
+                  <div class="title-ft">
+                    <h4>Sản phẩm haruco</h4>
+                  </div>
+                  <ul class="menu-ft">
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                    <li><a href="#"> Giới thiệu chung</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 px-0">
+                <div class="info-company-ft border-bottom-0 mb-0">
+                  <div class="info">
+                    <h5>Công ty TNHH Rezkin Việt Nam</h5>
+                    <ul class="list-info">
+                      <li>
+                        <div class="icon">
+                          <svg
+                            width="10"
+                            height="13"
+                            viewBox="0 0 10 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="5.23055"
+                              cy="4.61608"
+                              r="2.07702"
+                              fill="white"
+                            />
+                            <path
+                              d="M5.23055 1.07697V0C2.09195 0.0615412 0.845741 2.48729 0.614961 3.69247C0.245713 5.29255 0.871382 6.64132 1.23037 7.11571L5.23055 12.4236V10.5389C4.48693 9.55171 2.85352 7.37726 2.26888 6.57722C1.68424 5.77718 1.61501 5.06433 1.65347 4.80791C1.71501 1.8847 4.06384 1.10261 5.23055 1.07697Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M5.23055 1.08031V0C8.39645 0.0617318 9.6535 2.49499 9.88629 3.70391C10.2587 5.30893 9.62764 6.66189 9.26552 7.13774L5.23055 12.4621V10.5716C5.98064 9.58128 7.62826 7.4001 8.21798 6.59758C8.80771 5.79507 8.87754 5.08001 8.83875 4.82279C8.77667 1.89054 6.40742 1.10603 5.23055 1.08031Z"
+                              fill="white"
+                            />
+                            <circle
+                              cx="5.23055"
+                              cy="4.6155"
+                              r="0.923119"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <span>Địa chỉ: Đại Áng, Thanh Trì, Hà Nội</span>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <svg
+                            width="11"
+                            height="12"
+                            viewBox="0 0 11 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.86265 0.34082H0.216757C-0.981381 5.07772 3.07898 8.8825 5.25892 10.1928C7.6552 11.6258 10.0848 11.4201 11 11.1382V8.55078C11 8.03331 10.6339 7.90394 10.4509 7.90394L7.85489 7.35661L6.40714 8.74981C4.60993 7.9537 3.09562 5.89706 2.56311 4.96825L4.06078 3.47553C3.89438 2.79552 3.54159 1.32602 3.46171 0.888151C3.38184 0.450287 3.02905 0.34082 2.86265 0.34082Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <a href="tel:0839697689">Hotline: 0839.697.689 </a>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.72485 2.49265V5.17325L8.96468 5.73337V2.61268H2.24319V5.73337L1.48302 5.17325V2.61268C1.48302 2.00454 1.96312 1.82584 2.20318 1.8125H8.96468C9.57282 1.84451 9.72485 2.27927 9.72485 2.49265Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="5.12114"
+                              height="0.72016"
+                              rx="0.36008"
+                              transform="matrix(-1 0 0 1 8.16452 3.37207)"
+                              fill="white"
+                            />
+                            <rect
+                              width="5.12114"
+                              height="0.72016"
+                              rx="0.36008"
+                              transform="matrix(-1 0 0 1 8.16452 4.8125)"
+                              fill="white"
+                            />
+                            <path
+                              d="M5.84401 0.411511L7.6044 1.81182H6.44414L5.60396 1.17168L4.80378 1.81182H3.60351C4.12363 1.3984 5.21187 0.53954 5.40391 0.411511C5.59595 0.283483 5.77733 0.358166 5.84401 0.411511Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M11.0451 4.53239L9.72485 3.45215V4.41236L10.205 4.81245L8.96469 5.69265L5.60394 8.05317V8.93337C5.69996 8.93337 5.83065 8.85335 5.884 8.81334L6.68418 8.21321L9.44479 10.3337C9.73286 10.4937 9.91156 10.3737 9.96491 10.2937C10.221 10.0376 10.0449 9.81357 9.9249 9.73355L7.32432 7.77311L10.445 5.53261V10.3337C10.445 10.6858 10.1516 10.7738 10.0049 10.7738H6.12405V11.5339H10.0849C11.0131 11.4379 11.2185 10.7471 11.2052 10.4137V4.81245C11.2052 4.65242 11.0985 4.55906 11.0451 4.53239Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M5.56396 8.05317L1.00294 4.81245L1.48305 4.45237V3.45215L0.242773 4.45237C0.0187225 4.61241 -0.0106173 4.8658 0.00271893 4.97249V10.3737C0.0987406 11.3019 0.789561 11.5339 1.12297 11.5339H6.36414V10.7738H1.12297C0.77089 10.7738 0.736216 10.4004 0.762888 10.2137V5.53261L3.88358 7.77311L1.20299 9.77356C1.04295 9.9656 1.1363 10.2003 1.20299 10.2937C1.36302 10.4537 1.61641 10.387 1.7231 10.3337L4.52373 8.21321C4.72377 8.35991 5.17187 8.68531 5.36391 8.81334C5.55596 8.94137 5.57729 8.94671 5.56396 8.93337V8.05317Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <a href="mailto:hotro.haruco@gmail.com"
+                          >Email: hotro.haruco@gmail.com</a
+                        >
+                      </li>
+                    </ul>
+                    <ul class="list-sns-ic d-flex">
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_google-plus.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_facebook.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_twitter.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_youtube.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_in.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="./assets/images/icon/ic_tiktok.svg"
+                            alt="icon"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="map mt-4 w-100">
+                  <iframe
+                    class="w-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7374156101046!2d105.74344307599799!3d21.003160388655886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453703216c9e7%3A0x80cb3c937b9f8751!2sC%C3%B4ng%20Ty%20Tnhh%20Rezkin%20Vi%E1%BB%87t%20Nam!5e0!3m2!1sen!2s!4v1748109735181!5m2!1sen!2s"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div class="text-copyright text-center text-white pt-2 pb-3">
+                  © Copyright - Công ty TNHH Rezkin Việt Nam
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- booststrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.0/swiper-bundle.min.js"
+      integrity="sha512-nfTMywTuPQr/IAYeoMo3Yt/bMvHSwHZqNDy9nDkGBssthLnWhQLxJjjqhGdxTzyZBf+EQ9AcfDqYGLIZze8DbA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>

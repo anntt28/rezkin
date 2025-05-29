@@ -1,54 +1,223 @@
 .job-detail {
- background-color: #f6f6f6;
- margin-bottom: 49px;
- .breadcrumbs {
-  margin-bottom: 30px;
- }
+  background-color: #f6f6f6;
+  margin-bottom: 49px;
+  padding-bottom: 57px;
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
 }
 .job-detail-box {
- padding-bottom: 30px;
- .top-job-detail {
-  display: flex;
+  padding-bottom: 12px;
+  @include minWidth(768px) {
+    padding-bottom: 30px;
+  }
+  .top-job-detail {
+    display: flex;
+    background-color: $light;
+    border-radius: 20px;
+    padding: 17px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    @include minWidth(1200px) {
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 20px 49px;
+    }
+    .right {
+      display: flex;
+      gap: 15px;
+    }
+    .left {
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      gap: 10px;
+      align-items: center;
+      @include minWidth(768px) {
+        gap: 37px;
+        grid-template-columns: 181px 1fr;
+      }
+      @include minmaxWidth(768px,1199px) {
+        margin-bottom: 10px;
+      }
+      .img {
+        border-radius: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 78px;
+          @include minWidth(768px) {
+            height: 181px;
+          }
+        }
+      }
+      .text {
+        h1 {
+          color: $primary;
+          font-weight: 600;
+          line-height: 1;
+          font-size: 25px;
+          @include minWidth(768px) {
+            font-size: 40px;
+          }
+        }
+        p {
+          color: #484848;
+          font-size: 15px;
+          line-height: 1.8;
+          @include minWidth(768px) {
+            font-size: 18px;
+          }
+          strong {
+            font-weight: 600;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.job-detail-box_sp {
+  .btn-feature {
+    display: flex;
+    gap: 8px;
+    justify-content: start;
+  }
+  .left {
+    margin-bottom: 10px;
+  }
+  .info {
+    @include minmaxWidth(768px,1199px) {
+        text-align: center;
+      }
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.job-detail-main-com {
+  border-radius: 20px;
+  background-color: $light;
+  overflow: hidden;
+  margin-bottom: 30px;
+  h2 {
+    background-color: #4b4faf;
+    color: $light;
+    padding: 3px 17px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 25px;
+    @include minWidth(768px) {
+      padding: 9px 36px;
+      font-size: 30px;
+      line-height: 1.333;
+    }
+    .icon {
+      margin-right: 10px;
+      display: flex;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: $light;
+      }
+    }
+  }
+  .list-main-com-detail {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 17px;
+    column-gap: 17px;
+    padding: 17px;
+    @include minmaxWidth(768px, 1023px) {
+      padding: 37px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      row-gap: 20px;
+      column-gap: 10px;
+    }
+    @include minWidth(1024px) {
+      padding: 37px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      row-gap: 37px;
+      column-gap: 30px;
+    }
+    .item-main-com-detail {
+      display: flex;
+      align-items: start;
+      gap: 11px;
+      font-family: "Roboto Flex", sans-serif;
+      flex-direction: column;
+      @include minWidth(768px) {
+        flex-direction: row;
+        align-items: center;
+      }
+      .icon {
+        width: 47px;
+        height: 47px;
+        flex-shrink: 0;
+        background-color: #6a6dbf;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        overflow: hidden;
+        img {
+          object-fit: contain;
+        }
+      }
+      label {
+        display: block;
+        color: #484848;
+        font-weight: 600;
+        margin-bottom: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        @include minWidth(1024px) {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+.job-detail-most {
   background-color: $light;
   border-radius: 20px;
-  padding: 20px 49px;
-  margin-bottom: 30px;
-  .left {
-   display: grid;
-   grid-template-columns: 181px 1fr;
-   gap: 37px;
-   align-items: center;
-   .img {
-    border-radius: 100%;
-    overflow: hidden;
-    img {
-     object-fit: cover;
-     width: 100%;
-     height: 181px;
-    }
-   }
-   .text{
-    h1{
-        color: $primary;
-        font-weight: 600;
-        line-height: 1;
-        @include minWidth(768px){
-            font-size: 40px;
-        }
-    }
-    p{
-        color: #484848;
-        @include minWidth(768px){
-            font-size: 18px;
-        }
-        strong{
-            font-weight: 600;
-        }
-        &:last-child{
-            margin-bottom: 0;
-        }
-    }
-   }
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 17px;
+  @include minWidth(768px) {
+    padding: 37px;
   }
- }
+  h3 {
+    color: $primary;
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: 1.333;
+    font-size: 25px;
+    @include minWidth(768px) {
+      font-size: 30px;
+    }
+  }
+  .des {
+    p {
+      line-height: 1.8;
+      color: #484848;
+      font-size: 15px;
+      @include minWidth(768px) {
+        font-size: 17px;
+      }
+    }
+  }
 }

@@ -1,155 +1,169 @@
 .btn {
- &:focus {
-  box-shadow: none;
- }
+  &:focus {
+    box-shadow: none;
+  }
 }
 .btn-apply-job {
- color: #fff;
- border-radius: 50px;
- font-size: 16px;
- width: 134px;
- height: 35px;
- display: inline-flex;
- justify-content: center;
- align-items: center;
- gap: 6px;
- cursor: pointer;
- transition: all 0.3s;
- &:hover{
-  color: $light;
-  opacity: 0.8;
- }
+  color: #fff;
+  border-radius: 50px;
+  font-size: 16px;
+  width: 134px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    color: $light;
+    opacity: 0.8;
+  }
 }
 .btn-linear-rounded {
- border-radius: 50px;
- background: linear-gradient(71deg, #e72b29 0%, #f26d42 100%);
+  border-radius: 50px;
+  background: linear-gradient(71deg, #e72b29 0%, #f26d42 100%);
 }
 .btn-linear-rounded-orange {
- border-radius: 5px;
- background: linear-gradient(90deg, #f05b30 0%, #ff9318 100%);
+  border-radius: 5px;
+  background: linear-gradient(90deg, #f05b30 0%, #ff9318 100%);
 }
 .btn-border-rounded {
- border-radius: 50px;
- border: 1px solid $color-F05B30;
- color: $color-F05B30;
- padding: 3px 15px;
- display: inline-flex;
- align-items: center;
- transition: all 0.3s;
- svg {
-  margin-left: 10px;
-  path {
-   fill: $color-F05B30;
-  }
- }
- &:hover {
+  border-radius: 50px;
+  border: 1px solid $color-F05B30;
   color: $color-F05B30;
-  opacity: 0.5;
- }
+  padding: 3px 15px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s;
+  svg {
+    margin-left: 10px;
+    path {
+      fill: $color-F05B30;
+    }
+  }
+  &:hover {
+    color: $color-F05B30;
+    opacity: 0.5;
+  }
 }
 .btn-bo-F13B3B {
- background-color: #f13b3b;
- border: none;
- border-radius: 20px;
- color: $light;
- font-size: 18px;
- font-weight: 600;
- @include minWidth(768px) {
-  font-size: 20px;
- }
+  background-color: #f13b3b;
+  border: none;
+  border-radius: 20px;
+  color: $light;
+  font-size: 18px;
+  font-weight: 600;
+  @include minWidth(768px) {
+    font-size: 20px;
+  }
 }
 .btn-orange-bo {
- background-color: $color-FF6D3E;
- border: none;
- border-radius: 20px;
- color: $light;
- font-size: 18px;
- font-weight: 600;
- @include minWidth(768px) {
-  font-size: 20px;
- }
+  background-color: $color-FF6D3E;
+  border: none;
+  border-radius: 20px;
+  color: $light;
+  font-size: 18px;
+  font-weight: 600;
+  @include minWidth(768px) {
+    font-size: 20px;
+  }
 }
 .btn-blue-underline {
- color: #119dde;
- background: none;
- border: none;
- text-decoration: underline;
+  color: #119dde;
+  background: none;
+  border: none;
+  text-decoration: underline;
 }
 .btn-orange-arrow {
- color: $primary;
- display: flex;
- align-items: center;
- gap: 5px;
- &::after {
-  content: "";
-  background-image: url("../images/icon/ic_arrow-right-orange.svg");
-  width: 15px;
-  height: 13px;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: contain;
- }
+  color: $primary;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  &::after {
+    content: "";
+    background-image: url("../images/icon/ic_arrow-right-orange.svg");
+    width: 15px;
+    height: 13px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 .btn-base {
- border-radius: 50px;
- color: $light;
- padding: 5px 15px;
- display: inline-flex;
- align-items: center;
- transition: all 0.3s;
- svg {
-  margin-left: 7px;
- }
- &:hover {
+  border-radius: 50px;
   color: $light;
-  opacity: 0.5;
- }
+  padding: 5px 15px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s;
+  svg {
+    margin-left: 7px;
+  }
+  &:hover {
+    color: $light;
+    opacity: 0.5;
+  }
 }
 .btn-hamburger {
- width: 24px;
- height: 10px;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- align-items: flex-end;
- cursor: pointer;
- position: relative;
- z-index: 1060;
- @include trans;
- margin-left: 24px;
-
- span {
-  display: block;
-  width: 100%;
-  height: 2px;
-  border-radius: 10px;
-  background: $light;
+  width: 24px;
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+  position: relative;
+  z-index: 1060;
   @include trans;
- }
+  margin-left: 24px;
 
- &:hover {
-  span:nth-child(1) {
-   transform: translateX(2px);
+  span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background: $light;
+    @include trans;
   }
 
-  span:nth-child(2) {
-   transform: translateX(-3px);
+  &:hover {
+    span:nth-child(1) {
+      transform: translateX(2px);
+    }
+
+    span:nth-child(2) {
+      transform: translateX(-3px);
+    }
   }
- }
 }
 
 .btn-primary {
- background-color: $primary;
- border-color: $primary;
+  background-color: $primary;
+  border-color: $primary;
 }
 .btn-linear-bor-rounded {
- text-transform: uppercase;
- color: $light;
- border: 1px solid #ffc686;
- background: linear-gradient(90deg, #ffa53e 0%, #ff6d3e 100%);
- border-radius: 10px;
- font-size: 22px;
- min-width: 293px;
- height: 45px;
- padding-top: 2px;
+  text-transform: uppercase;
+  color: $light;
+  border: 1px solid #ffc686;
+  background: linear-gradient(90deg, #ffa53e 0%, #ff6d3e 100%);
+  border-radius: 10px;
+  font-size: 22px;
+  min-width: 293px;
+  height: 45px;
+  padding-top: 2px;
+}
+.btn-rounded-50-icon {
+  border-radius: 50px;
+  padding: 5px;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+   @include minWidth(768px) {
+    font-size: 18px;
+    padding: 5px 20px;
+   }
 }
